@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="da9ad96ac35d32100a7bf3ddd40131c9" label="Admission Application" max_length="40" name="x_595775_automat_0_admission_application" type="collection">
+        <element choice="1" label="Program" max_length="40" name="program" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="BS SE" sequence="0" value="bs_se"/>
+                <element inactive_on_update="false" label="BS CS" sequence="1" value="bs_cs"/>
+                <element inactive_on_update="false" label="BS IT" sequence="2" value="bs_it"/>
+            </choice>
+        </element>
+        <element label="Date of Birth" max_length="40" name="date_of_birth" type="glide_date"/>
+        <element label="Inter Marks" max_length="40" name="inter_marks" type="integer"/>
+        <element choice="1" label="Gender" max_length="40" name="gender" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Female" sequence="1" value="female"/>
+                <element inactive_on_update="false" label="Male" sequence="0" value="male"/>
+            </choice>
+        </element>
+        <element label="Email Address" max_length="40" name="email_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Applicant Name" max_length="40" name="applicant_name" type="string"/>
+        <element choice="3" default="draft" label="Application Status" max_length="40" name="application_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="draft"/>
+                <element inactive_on_update="false" label="Rejected" sequence="3" value="rejected"/>
+                <element inactive_on_update="false" label="Accepted" sequence="2" value="accepted"/>
+                <element inactive_on_update="false" label="Submitted" sequence="1" value="submitted"/>
+            </choice>
+        </element>
+        <element label="Phone Number" max_length="40" name="phone_number" type="phone_number_e164"/>
+        <element label="Matric Marks" max_length="40" name="matric_marks" type="integer"/>
+    </element>
+</database>
