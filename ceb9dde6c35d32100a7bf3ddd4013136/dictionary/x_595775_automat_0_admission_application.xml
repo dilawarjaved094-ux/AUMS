@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="da9ad96ac35d32100a7bf3ddd40131c9" label="Admission Application" max_length="40" name="x_595775_automat_0_admission_application" type="collection">
-        <element choice="1" label="Program" max_length="40" name="program" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="BS SE" sequence="0" value="bs_se"/>
-                <element inactive_on_update="false" label="BS CS" sequence="1" value="bs_cs"/>
-                <element inactive_on_update="false" label="BS IT" sequence="2" value="bs_it"/>
-            </choice>
-        </element>
+        <element label="Address" max_length="40" name="address" type="string_full_utf8"/>
+        <element label="State" max_length="40" name="state" type="string"/>
         <element label="Date of Birth" max_length="40" name="date_of_birth" type="glide_date"/>
         <element label="Inter Marks" max_length="40" name="inter_marks" type="integer"/>
         <element choice="1" label="Gender" max_length="40" name="gender" type="choice">
@@ -16,6 +11,29 @@
             </choice>
         </element>
         <element label="Email Address" max_length="40" name="email_address" type="string"/>
+        <element choice="1" label="Degree Program" max_length="40" name="degree_program" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Data Sciences" sequence="8" value="data_sciences"/>
+                <element inactive_on_update="false" label="Art" sequence="16" value="art"/>
+                <element inactive_on_update="false" label="Bio Chemistry" sequence="6" value="bio_chemistry"/>
+                <element inactive_on_update="false" label="Psychology" sequence="14" value="psychology"/>
+                <element inactive_on_update="false" label="Physics" sequence="4" value="physics"/>
+                <element inactive_on_update="false" label="Botany" sequence="12" value="botany"/>
+                <element inactive_on_update="false" label="Information Technology" sequence="2" value="information_technology"/>
+                <element inactive_on_update="false" label="Mass Communication" sequence="10" value="mass_communication"/>
+                <element inactive_on_update="false" label="Hotel Management" sequence="18" value="hotel_management"/>
+                <element inactive_on_update="false" label="English" sequence="3" value="english"/>
+                <element inactive_on_update="false" label="Mathematics" sequence="11" value="mathematics"/>
+                <element inactive_on_update="false" label="Software Engineering" sequence="1" value="software_engineering"/>
+                <element inactive_on_update="false" label="Artificial Intelligence" sequence="9" value="artificial_intelligence"/>
+                <element inactive_on_update="false" label="Fashion Designing" sequence="17" value="fashion_designing"/>
+                <element inactive_on_update="false" label="Bio Technology" sequence="7" value="bio_technology"/>
+                <element inactive_on_update="false" label="BBA" sequence="15" value="bba"/>
+                <element inactive_on_update="false" label="Computer Science" sequence="0" value="computer_science"/>
+                <element inactive_on_update="false" label="Chemistry" sequence="5" value="chemistry"/>
+                <element inactive_on_update="false" label="Statistics" sequence="13" value="statistics"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Applicant Name" max_length="40" name="applicant_name" type="string"/>
         <element choice="3" default="draft" label="Application Status" max_length="40" name="application_status" type="choice">
@@ -26,7 +44,25 @@
                 <element inactive_on_update="false" label="Submitted" sequence="1" value="submitted"/>
             </choice>
         </element>
+        <element label="CNIC" max_length="40" name="cnic" type="string_full_utf8"/>
+        <element label="Nationality" max_length="32" name="nationality" reference="core_country" type="reference"/>
+        <element choice="1" label="Marital status" max_length="40" name="marital_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Married" sequence="1" value="married"/>
+                <element inactive_on_update="false" label="Single" sequence="0" value="single"/>
+            </choice>
+        </element>
         <element label="Phone Number" max_length="40" name="phone_number" type="phone_number_e164"/>
         <element label="Matric Marks" max_length="40" name="matric_marks" type="integer"/>
+        <element choice="1" label="Degree Level" max_length="40" name="degree_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Post Graduate" sequence="1" value="post_graduate"/>
+                <element inactive_on_update="false" label="Under Graduate" sequence="0" value="under_graduate"/>
+                <element inactive_on_update="false" label="PhD" sequence="2" value="phd"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="nationality"/>
+        </index>
     </element>
 </database>
