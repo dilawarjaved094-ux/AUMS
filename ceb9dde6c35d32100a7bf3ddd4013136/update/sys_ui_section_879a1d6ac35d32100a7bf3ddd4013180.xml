@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Personal Information" section_id="879a1d6ac35d32100a7bf3ddd4013180" sys_domain="global" table="x_595775_automat_0_admission_application" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>number</element>
+            <element>first_name</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-11-21 21:50:23</sys_created_on>
-            <sys_id>d371e5e6c39d32100a7bf3ddd4013194</sys_id>
+            <sys_created_on>2025-12-09 18:54:19</sys_created_on>
+            <sys_id>fbc5e15cc33532100a7bf3ddd4013128</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Personal Information" display_value="Personal Information" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">879a1d6ac35d32100a7bf3ddd4013180</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-11-21 21:50:23</sys_updated_on>
+            <sys_updated_on>2025-12-09 18:54:19</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>applicant_name</element>
+            <element>last_name</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-11-21 21:50:23</sys_created_on>
-            <sys_id>5371e5e6c39d32100a7bf3ddd4013195</sys_id>
+            <sys_created_on>2025-12-09 18:54:19</sys_created_on>
+            <sys_id>b7c5e15cc33532100a7bf3ddd4013129</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Personal Information" display_value="Personal Information" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">879a1d6ac35d32100a7bf3ddd4013180</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-11-21 21:50:23</sys_updated_on>
+            <sys_updated_on>2025-12-09 18:54:19</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>email_address</element>
+            <element>date_of_birth</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-11-21 21:50:23</sys_created_on>
-            <sys_id>df71e5e6c39d32100a7bf3ddd4013195</sys_id>
+            <sys_created_on>2025-12-09 18:54:19</sys_created_on>
+            <sys_id>73c5e15cc33532100a7bf3ddd401312a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Personal Information" display_value="Personal Information" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">879a1d6ac35d32100a7bf3ddd4013180</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-11-21 21:50:23</sys_updated_on>
+            <sys_updated_on>2025-12-09 18:54:19</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>phone_number</element>
+            <element>gender</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-11-21 21:50:23</sys_created_on>
-            <sys_id>5f71e5e6c39d32100a7bf3ddd4013196</sys_id>
+            <sys_created_on>2025-12-09 18:54:19</sys_created_on>
+            <sys_id>3fc5e15cc33532100a7bf3ddd401312a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Personal Information" display_value="Personal Information" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">879a1d6ac35d32100a7bf3ddd4013180</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-11-21 21:50:23</sys_updated_on>
+            <sys_updated_on>2025-12-09 18:54:19</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,55 +60,69 @@
             <element>.split</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-11-21 21:50:23</sys_created_on>
-            <sys_id>db71e5e6c39d32100a7bf3ddd4013197</sys_id>
+            <sys_created_on>2025-12-09 18:54:19</sys_created_on>
+            <sys_id>f7c5e15cc33532100a7bf3ddd401312b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Personal Information" display_value="Personal Information" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">879a1d6ac35d32100a7bf3ddd4013180</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-11-21 21:50:23</sys_updated_on>
+            <sys_updated_on>2025-12-09 18:54:19</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>application_status</element>
+            <element>cnic</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-11-21 21:50:23</sys_created_on>
-            <sys_id>5b71e5e6c39d32100a7bf3ddd4013198</sys_id>
+            <sys_created_on>2025-12-09 18:54:19</sys_created_on>
+            <sys_id>b3c5e15cc33532100a7bf3ddd401312c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Personal Information" display_value="Personal Information" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">879a1d6ac35d32100a7bf3ddd4013180</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-11-21 21:50:23</sys_updated_on>
+            <sys_updated_on>2025-12-09 18:54:19</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>date_of_birth</element>
+            <element>nationality</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-11-21 21:50:23</sys_created_on>
-            <sys_id>d771e5e6c39d32100a7bf3ddd4013199</sys_id>
+            <sys_created_on>2025-12-09 18:54:19</sys_created_on>
+            <sys_id>7fc5e15cc33532100a7bf3ddd401312c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Personal Information" display_value="Personal Information" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">879a1d6ac35d32100a7bf3ddd4013180</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-11-21 21:50:23</sys_updated_on>
+            <sys_updated_on>2025-12-09 18:54:19</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>gender</element>
+            <element>religion</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-11-21 21:50:23</sys_created_on>
-            <sys_id>5771e5e6c39d32100a7bf3ddd401319a</sys_id>
+            <sys_created_on>2025-12-09 18:54:19</sys_created_on>
+            <sys_id>3bc5e15cc33532100a7bf3ddd401312d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Personal Information" display_value="Personal Information" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">879a1d6ac35d32100a7bf3ddd4013180</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-11-21 21:50:23</sys_updated_on>
+            <sys_updated_on>2025-12-09 18:54:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>marital_status</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-09 18:54:19</sys_created_on>
+            <sys_id>f3c5e15cc33532100a7bf3ddd401312e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Personal Information" display_value="Personal Information" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">879a1d6ac35d32100a7bf3ddd4013180</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-09 18:54:19</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

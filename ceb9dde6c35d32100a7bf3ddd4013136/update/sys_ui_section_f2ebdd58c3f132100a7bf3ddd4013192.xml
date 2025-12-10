@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Contact Details" section_id="f2ebdd58c3f132100a7bf3ddd4013192" sys_domain="global" table="x_595775_automat_0_admission_application" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email_address</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-09 18:59:56</sys_created_on>
+            <sys_id>0a172110c37532100a7bf3ddd4013160</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">f2ebdd58c3f132100a7bf3ddd4013192</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-09 18:59:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-09 18:59:56</sys_created_on>
+            <sys_id>c2172110c37532100a7bf3ddd4013161</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">f2ebdd58c3f132100a7bf3ddd4013192</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-09 18:59:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>mailing_address</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-09 18:59:56</sys_created_on>
+            <sys_id>8e172110c37532100a7bf3ddd4013161</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">f2ebdd58c3f132100a7bf3ddd4013192</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-09 18:59:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-09 18:59:56</sys_created_on>
+            <sys_id>4a172110c37532100a7bf3ddd4013162</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">f2ebdd58c3f132100a7bf3ddd4013192</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-09 18:59:56</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>mobile_number</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-09 18:59:56</sys_created_on>
+            <sys_id>06172110c37532100a7bf3ddd4013163</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">f2ebdd58c3f132100a7bf3ddd4013192</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-09 18:59:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>address</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-09 18:59:56</sys_created_on>
+            <sys_id>ce172110c37532100a7bf3ddd4013163</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">f2ebdd58c3f132100a7bf3ddd4013192</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-09 18:59:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Contact Details</caption>
+            <header>false</header>
+            <name>x_595775_automat_0_admission_application</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-09 18:11:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f2ebdd58c3f132100a7bf3ddd4013192</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_595775_automat_0_admission_application</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+            <sys_update_name>sys_ui_section_f2ebdd58c3f132100a7bf3ddd4013192</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-09 18:11:06</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

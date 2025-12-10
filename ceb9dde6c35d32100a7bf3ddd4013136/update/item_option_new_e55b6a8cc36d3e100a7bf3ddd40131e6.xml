@@ -5,8 +5,8 @@
         <cat_item display_value="Apply for Admission">2c72e56ac39d32100a7bf3ddd4013147</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
-        <choice_field/>
-        <choice_table/>
+        <choice_field>degree_level</choice_field>
+        <choice_table>x_595775_automat_0_admission_application</choice_table>
         <conversational_label/>
         <create_roles/>
         <default_html_value/>
@@ -14,7 +14,7 @@
         <delete_roles/>
         <delivery_plan/>
         <description/>
-        <disable_initial_slot_fill>false</disable_initial_slot_fill>
+        <disable_initial_slot_fill>true</disable_initial_slot_fill>
         <display_title>false</display_title>
         <do_not_select_first>false</do_not_select_first>
         <dynamic_default_value/>
@@ -28,17 +28,17 @@
         <help_tag>More information</help_tag>
         <help_text/>
         <hidden>false</hidden>
-        <include_none>false</include_none>
+        <include_none>true</include_none>
         <instructions/>
         <layout>normal</layout>
         <list_table/>
         <lookup_dependent_question/>
-        <lookup_label/>
+        <lookup_label>degree_level</lookup_label>
         <lookup_price/>
         <lookup_source/>
-        <lookup_table/>
+        <lookup_table>x_595775_automat_0_admission_application</lookup_table>
         <lookup_unique>false</lookup_unique>
-        <lookup_value/>
+        <lookup_value>degree_level</lookup_value>
         <macro/>
         <macroponent/>
         <mandatory>true</mandatory>
@@ -47,7 +47,7 @@
         <mask_use_encryption>false</mask_use_encryption>
         <name>degree_level</name>
         <not_available_conversation>false</not_available_conversation>
-        <order/>
+        <order>31</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -61,7 +61,7 @@
         <record/>
         <record_producer_table>x_595775_automat_0_admission_application</record_producer_table>
         <reference/>
-        <reference_qual/>
+        <reference_qual>name=x_595775_automat_0_admission_application^element=degree_level^inactive=false^language=en</reference_qual>
         <reference_qual_condition/>
         <rich_text/>
         <roles_to_use_also_request_for/>
@@ -82,14 +82,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-26 19:04:26</sys_created_on>
         <sys_id>e55b6a8cc36d3e100a7bf3ddd40131e6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Degree Level</sys_name>
         <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
         <sys_policy/>
         <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
         <sys_update_name>item_option_new_e55b6a8cc36d3e100a7bf3ddd40131e6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-26 19:04:26</sys_updated_on>
+        <sys_updated_on>2025-12-10 01:44:04</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
@@ -97,7 +97,7 @@
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
         <variable_set/>
