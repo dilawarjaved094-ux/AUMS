@@ -91,14 +91,14 @@ current.application_status = 'submitted';]]></script>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-21 21:59:14</sys_created_on>
         <sys_id>2c72e56ac39d32100a7bf3ddd4013147</sys_id>
-        <sys_mod_count>206</sys_mod_count>
+        <sys_mod_count>211</sys_mod_count>
         <sys_name>Apply for Admission</sys_name>
         <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
         <sys_policy/>
         <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
         <sys_update_name>sc_cat_item_producer_2c72e56ac39d32100a7bf3ddd4013147</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-12-10 02:24:21</sys_updated_on>
+        <sys_updated_on>2025-12-10 14:46:42</sys_updated_on>
         <table_name>x_595775_automat_0_admission_application</table_name>
         <taxonomy_topic/>
         <template/>
@@ -106,7 +106,7 @@ current.application_status = 'submitted';]]></script>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>206</version>
+        <version>211</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>

@@ -3,6 +3,7 @@
         <element label="Permanent Address" max_length="40" name="address" type="string_full_utf8"/>
         <element label="State" max_length="40" name="state" type="string"/>
         <element label="Domicile Certificate" max_length="40" name="domicile_certificate" type="file_attachment"/>
+        <element dependent="assignment_group" dependent_on_field="assignment_group" label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" type="reference" use_dependent_field="true"/>
         <element label="Emergency Contact Person" max_length="40" name="emergency_contact_person" type="string"/>
         <element label="Date of Birth" max_length="40" name="date_of_birth" type="glide_date"/>
         <element label="Father Mobile" max_length="255" name="father_mobile" type="phone_number_e164"/>
@@ -58,6 +59,7 @@
         <element label="Intermediate/A-Level Certificate" max_length="40" name="intermediate_a_level_certificate" type="file_attachment"/>
         <element label="Major Subjects" max_length="40" name="major_subjects" type="integer"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="a36d0aa8c3f132100a7bf3ddd4013172" label="Assignment Group" max_length="32" name="assignment_group" reference="sys_user_group" type="reference"/>
         <element label="Last Name" max_length="40" name="last_name" type="string"/>
         <element label="Father Name" max_length="40" name="father_name" type="string"/>
         <element label="Institute Name" max_length="40" name="institute_name" type="string"/>
@@ -67,6 +69,7 @@
                 <element inactive_on_update="false" label="Rejected" sequence="3" value="rejected"/>
                 <element inactive_on_update="false" label="Accepted" sequence="2" value="accepted"/>
                 <element inactive_on_update="false" label="Submitted" sequence="1" value="submitted"/>
+                <element inactive_on_update="false" label="Admitted" sequence="4" value="admitted"/>
             </choice>
         </element>
         <element label="CNIC Number" max_length="40" name="cnic" type="string_full_utf8"/>
@@ -93,6 +96,12 @@
             </choice>
         </element>
         <index name="index">
+            <element name="assigned_to"/>
+        </index>
+        <index name="index2">
+            <element name="assignment_group"/>
+        </index>
+        <index name="index3">
             <element name="nationality"/>
         </index>
     </element>

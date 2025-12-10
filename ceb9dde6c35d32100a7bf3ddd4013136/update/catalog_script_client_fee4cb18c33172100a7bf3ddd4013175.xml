@@ -13,32 +13,55 @@
         <description/>
         <field/>
         <global>true</global>
-        <isolate_script>true</isolate_script>
+        <isolate_script>false</isolate_script>
         <messages/>
         <name>Calculate Percentage (Obtained Change)</name>
         <order/>
         <published_ref/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
-   if (isLoading || newValue == '') {
-      return;
-   }
+    if (isLoading || newValue == '') {
+        return;
+    }
 
-   // 1. Get both values
-   var obtained = parseFloat(newValue);
-   var total = parseFloat(g_form.getValue('total_marks'));
+    // 1. Get both values
+    // We re-fetch both values to ensure we always have the latest numbers
+    var total = parseFloat(g_form.getValue('total_marks'));
+    var obtained = parseFloat(g_form.getValue('obtained_marks'));
 
-   // 2. validation: Ensure we don't divide by zero or calculate with missing data
-   if (total > 0 && !isNaN(obtained)) {
-      
-      // 3. Calculate Percentage
-      var result = (obtained / total) * 100;
+    // 2. Clear any previous error messages
+    // This removes the red text if the user fixes their mistake
+    g_form.hideFieldMsg('obtained_marks');
 
-      // 4. Set Value (formatted to 2 decimal places, e.g., 85.50)
-      g_form.setValue('percentage', result.toFixed(2));
-   } else {
-       // Optional: Clear the percentage if the numbers are invalid
-       g_form.setValue('percentage', '');
-   }
+    // 3. Check if both fields actually have numbers in them
+    if (!isNaN(total) && !isNaN(obtained)) {
+
+        // --- VALIDATION START ---
+
+        // Check A: Is obtained higher than total?
+        if (obtained > total) {
+            g_form.showFieldMsg('obtained_marks', 'Obtained marks cannot be greater than Total marks.', 'error');
+            g_form.setValue('percentage', ''); // Clear the result so they can't submit invalid data
+            return; // Stop the script here
+        }
+
+        // Check B: Is Total zero? (Prevents division by zero)
+        if (total <= 0) {
+            // You might not need an error here, but we shouldn't calculate
+            return;
+        }
+
+        // --- VALIDATION END ---
+
+        // 4. Calculate Percentage
+        var result = (obtained / total) * 100;
+
+        // 5. Set Value (formatted to 2 decimal places)
+        g_form.setValue('percentage', result.toFixed(2));
+
+    } else {
+        // If one field is empty, clear the percentage
+        g_form.setValue('percentage', '');
+    }
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -46,7 +69,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fee4cb18c33172100a7bf3ddd4013175</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Calculate Percentage (Obtained Change)</sys_name>
         <sys_overrides/>
         <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
@@ -54,7 +77,7 @@
         <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
         <sys_update_name>catalog_script_client_fee4cb18c33172100a7bf3ddd4013175</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-12-10 01:54:54</sys_updated_on>
+        <sys_updated_on>2025-12-10 14:40:17</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>0</ui_type>
