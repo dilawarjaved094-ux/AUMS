@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="da9ad96ac35d32100a7bf3ddd40131c9" label="Admission Application" max_length="40" name="x_595775_automat_0_admission_application" type="collection">
+        <element label="Permanent Address" max_length="40" name="address" type="string_full_utf8"/>
+        <element label="State" max_length="40" name="state" type="string"/>
+        <element label="Domicile Certificate" max_length="40" name="domicile_certificate" type="file_attachment"/>
+        <element dependent="assignment_group" dependent_on_field="assignment_group" label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" type="reference" use_dependent_field="true"/>
+        <element label="Emergency Contact Person" max_length="40" name="emergency_contact_person" type="string"/>
+        <element label="Date of Birth" max_length="40" name="date_of_birth" type="glide_date"/>
+        <element label="Father Mobile" max_length="255" name="father_mobile" type="phone_number_e164"/>
+        <element label="Percentage" max_length="40" name="percentage" type="integer"/>
+        <element label="Degree/Transcript" max_length="40" name="degree_transcript" type="file_attachment"/>
+        <element label="Roll Number" max_length="40" name="roll_number" type="integer"/>
+        <element label="Obtained Marks" max_length="40" name="obtained_marks" type="integer"/>
+        <element label="CNIC Copy" max_length="40" name="cnic_copy" type="user_image"/>
+        <element label="Guardian Relation" max_length="40" name="guardian_relation" type="string"/>
+        <element label="Guardian Name" max_length="40" name="guardian_name" type="string"/>
+        <element choice="1" label="Gender" max_length="40" name="gender" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Female" sequence="1" value="female"/>
+                <element inactive_on_update="false" label="Male" sequence="0" value="male"/>
+            </choice>
+        </element>
+        <element label="Mailing Address" max_length="40" name="mailing_address" type="string_full_utf8"/>
+        <element label="First Name" max_length="40" name="first_name" type="string"/>
+        <element label="Father CNIC" max_length="40" name="father_cnic" type="string_full_utf8"/>
+        <element choice="1" label="Degree/Certificate" max_length="40" name="degree_certificate" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Diploma" sequence="2" value="diploma"/>
+                <element inactive_on_update="false" label="Matriculation" sequence="0" value="matriculation"/>
+                <element inactive_on_update="false" label="Graduation" sequence="3" value="graduation"/>
+                <element inactive_on_update="false" label="Intermediate" sequence="1" value="intermediate"/>
+            </choice>
+        </element>
+        <element label="Email Address" max_length="40" name="email_address" type="string"/>
+        <element choice="1" label="Degree Program" max_length="40" name="degree_program" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Data Sciences" sequence="8" value="data_sciences"/>
+                <element inactive_on_update="false" label="Art" sequence="16" value="art"/>
+                <element inactive_on_update="false" label="Bio Chemistry" sequence="6" value="bio_chemistry"/>
+                <element inactive_on_update="false" label="Psychology" sequence="14" value="psychology"/>
+                <element inactive_on_update="false" label="Physics" sequence="4" value="physics"/>
+                <element inactive_on_update="false" label="Botany" sequence="12" value="botany"/>
+                <element inactive_on_update="false" label="Information Technology" sequence="2" value="information_technology"/>
+                <element inactive_on_update="false" label="Mass Communication" sequence="10" value="mass_communication"/>
+                <element inactive_on_update="false" label="Hotel Management" sequence="18" value="hotel_management"/>
+                <element inactive_on_update="false" label="English" sequence="3" value="english"/>
+                <element inactive_on_update="false" label="Mathematics" sequence="11" value="mathematics"/>
+                <element inactive_on_update="false" label="Software Engineering" sequence="1" value="software_engineering"/>
+                <element inactive_on_update="false" label="Artificial Intelligence" sequence="9" value="artificial_intelligence"/>
+                <element inactive_on_update="false" label="Fashion Designing" sequence="17" value="fashion_designing"/>
+                <element inactive_on_update="false" label="Bio Technology" sequence="7" value="bio_technology"/>
+                <element inactive_on_update="false" label="BBA" sequence="15" value="bba"/>
+                <element inactive_on_update="false" label="Computer Science" sequence="0" value="computer_science"/>
+                <element inactive_on_update="false" label="Chemistry" sequence="5" value="chemistry"/>
+                <element inactive_on_update="false" label="Statistics" sequence="13" value="statistics"/>
+            </choice>
+        </element>
+        <element label="Mobile Number" max_length="40" name="mobile_number" type="phone_number_e164"/>
+        <element label="Intermediate/A-Level Certificate" max_length="40" name="intermediate_a_level_certificate" type="file_attachment"/>
+        <element label="Major Subjects" max_length="40" name="major_subjects" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="a36d0aa8c3f132100a7bf3ddd4013172" label="Assignment Group" max_length="32" name="assignment_group" reference="sys_user_group" type="reference"/>
+        <element label="Last Name" max_length="40" name="last_name" type="string"/>
+        <element label="Father Name" max_length="40" name="father_name" type="string"/>
+        <element label="Institute Name" max_length="40" name="institute_name" type="string"/>
+        <element choice="3" default="draft" label="Application Status" max_length="40" name="application_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="draft"/>
+                <element inactive_on_update="false" label="Rejected" sequence="3" value="rejected"/>
+                <element inactive_on_update="false" label="Accepted" sequence="2" value="accepted"/>
+                <element inactive_on_update="false" label="Submitted" sequence="1" value="submitted"/>
+                <element inactive_on_update="false" label="Admitted" sequence="4" value="admitted"/>
+            </choice>
+        </element>
+        <element label="CNIC Number" max_length="40" name="cnic" type="string_full_utf8"/>
+        <element label="Nationality" max_length="32" name="nationality" reference="core_country" type="reference"/>
+        <element choice="1" label="Marital status" max_length="40" name="marital_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Married" sequence="1" value="married"/>
+                <element inactive_on_update="false" label="Single" sequence="0" value="single"/>
+            </choice>
+        </element>
+        <element label="Profile Picture" max_length="40" name="profile_picture" type="user_image"/>
+        <element label="Matriculation/O-Level Certificate" max_length="40" name="matriculation_o_level_certificate" type="file_attachment"/>
+        <element label="Total marks" max_length="40" name="total_marks" type="integer"/>
+        <element label="Paid Fee Receipt" max_length="40" name="paid_fee_receipt" type="file_attachment"/>
+        <element label="Religion" max_length="40" name="religion" type="string"/>
+        <element label="Emergency Contact Number" max_length="40" name="emergency_contact_number" type="phone_number_e164"/>
+        <element label="Passing Year" max_length="40" name="passing_year" type="integer"/>
+        <element label="Guardian Mobile" max_length="40" name="guardian_mobile" type="phone_number_e164"/>
+        <element choice="1" label="Degree Level" max_length="40" name="degree_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Post Graduate" sequence="1" value="post_graduate"/>
+                <element inactive_on_update="false" label="Under Graduate" sequence="0" value="under_graduate"/>
+                <element inactive_on_update="false" label="PhD" sequence="2" value="phd"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="assigned_to"/>
+        </index>
+        <index name="index2">
+            <element name="assignment_group"/>
+        </index>
+        <index name="index3">
+            <element name="nationality"/>
+        </index>
+    </element>
+</database>

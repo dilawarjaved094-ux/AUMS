@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="additional_instructions" label="Additional Instructions" language="en" table="x_595775_automat_0_timetable_request">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>additional_instructions</element>
+            <help/>
+            <hint/>
+            <label>Additional Instructions</label>
+            <language>en</language>
+            <name>x_595775_automat_0_timetable_request</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-13 07:01:03</sys_created_on>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>Additional Instructions</sys_name>
+            <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+            <sys_update_name>sys_documentation_x_595775_automat_0_timetable_request_additional_instructions_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-13 07:01:04</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

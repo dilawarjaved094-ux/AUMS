@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list action="DELETE" parent="" relationship="" sys_domain="global" table="x_595775_automat_0_admission_application" version="2" view="RPTdaf396e4c33532100a7bf3ddd40131ff">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_595775_automat_0_admission_application" element="NULL" name="x_595775_automat_0_admission_application" parent="NULL" relationship="NULL" sys_domain="global" view="66f39ee4c33532100a7bf3ddd4013196">a6f39ee4c33532100a7bf3ddd4013198</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-10 16:54:30</sys_created_on>
+            <sys_id>2af39ee4c33532100a7bf3ddd4013199</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-10 16:54:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>first_name</element>
+            <list_id display_value="x_595775_automat_0_admission_application" element="NULL" name="x_595775_automat_0_admission_application" parent="NULL" relationship="NULL" sys_domain="global" view="66f39ee4c33532100a7bf3ddd4013196">a6f39ee4c33532100a7bf3ddd4013198</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-10 16:54:30</sys_created_on>
+            <sys_id>aef39ee4c33532100a7bf3ddd4013199</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-10 16:54:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>percentage</element>
+            <list_id display_value="x_595775_automat_0_admission_application" element="NULL" name="x_595775_automat_0_admission_application" parent="NULL" relationship="NULL" sys_domain="global" view="66f39ee4c33532100a7bf3ddd4013196">a6f39ee4c33532100a7bf3ddd4013198</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-10 16:54:30</sys_created_on>
+            <sys_id>26f39ee4c33532100a7bf3ddd401319a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-10 16:54:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>application_status</element>
+            <list_id display_value="x_595775_automat_0_admission_application" element="NULL" name="x_595775_automat_0_admission_application" parent="NULL" relationship="NULL" sys_domain="global" view="66f39ee4c33532100a7bf3ddd4013196">a6f39ee4c33532100a7bf3ddd4013198</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-10 16:54:30</sys_created_on>
+            <sys_id>aaf39ee4c33532100a7bf3ddd401319a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-10 16:54:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="x_595775_automat_0_admission_application" element="NULL" name="x_595775_automat_0_admission_application" parent="NULL" relationship="NULL" sys_domain="global" view="66f39ee4c33532100a7bf3ddd4013196">a6f39ee4c33532100a7bf3ddd4013198</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-10 16:54:30</sys_created_on>
+            <sys_id>22f39ee4c33532100a7bf3ddd401319b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-10 16:54:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="x_595775_automat_0_admission_application" element="NULL" name="x_595775_automat_0_admission_application" parent="NULL" relationship="NULL" sys_domain="global" view="66f39ee4c33532100a7bf3ddd4013196">a6f39ee4c33532100a7bf3ddd4013198</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-10 16:54:30</sys_created_on>
+            <sys_id>a6f39ee4c33532100a7bf3ddd401319b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-10 16:54:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_595775_automat_0_admission_application</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-10 16:54:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a6f39ee4c33532100a7bf3ddd4013198</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_595775_automat_0_admission_application</sys_name>
+            <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+            <sys_update_name>sys_ui_list_x_595775_automat_0_admission_application_RPTdaf396e4c33532100a7bf3ddd40131ff</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-10 16:54:30</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rptdaf396e4c33532100a7bf3ddd40131ff" name="RPTdaf396e4c33532100a7bf3ddd40131ff">66f39ee4c33532100a7bf3ddd4013196</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</application>
+        <file_path/>
+        <instance_id>6d9792171b9afd506a85eb9b2d4bcb0e</instance_id>
+        <instance_name>dev209896</instance_name>
+        <name>sys_ui_list_x_595775_automat_0_admission_application_RPTdaf396e4c33532100a7bf3ddd40131ff</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" relationship="" sys_domain="global" table="x_595775_automat_0_admission_application" version="2" view="RPTdaf396e4c33532100a7bf3ddd40131ff"><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>number</element><list_id display_value="x_595775_automat_0_admission_application" element="NULL" name="x_595775_automat_0_admission_application" parent="NULL" relationship="NULL" sys_domain="global" view="66f39ee4c33532100a7bf3ddd4013196">a6f39ee4c33532100a7bf3ddd4013198</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-10 16:54:30</sys_created_on><sys_id>2af39ee4c33532100a7bf3ddd4013199</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-10 16:54:30</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>first_name</element><list_id display_value="x_595775_automat_0_admission_application" element="NULL" name="x_595775_automat_0_admission_application" parent="NULL" relationship="NULL" sys_domain="global" view="66f39ee4c33532100a7bf3ddd4013196">a6f39ee4c33532100a7bf3ddd4013198</list_id><max_value>false</max_value><min_value>false</min_value><position>1</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-10 16:54:30</sys_created_on><sys_id>aef39ee4c33532100a7bf3ddd4013199</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-10 16:54:30</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>percentage</element><list_id display_value="x_595775_automat_0_admission_application" element="NULL" name="x_595775_automat_0_admission_application" parent="NULL" relationship="NULL" sys_domain="global" view="66f39ee4c33532100a7bf3ddd4013196">a6f39ee4c33532100a7bf3ddd4013198</list_id><max_value>false</max_value><min_value>false</min_value><position>2</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-10 16:54:30</sys_created_on><sys_id>26f39ee4c33532100a7bf3ddd401319a</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-10 16:54:30</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>application_status</element><list_id display_value="x_595775_automat_0_admission_application" element="NULL" name="x_595775_automat_0_admission_application" parent="NULL" relationship="NULL" sys_domain="global" view="66f39ee4c33532100a7bf3ddd4013196">a6f39ee4c33532100a7bf3ddd4013198</list_id><max_value>false</max_value><min_value>false</min_value><position>3</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-10 16:54:30</sys_created_on><sys_id>aaf39ee4c33532100a7bf3ddd401319a</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-10 16:54:30</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>sys_created_on</element><list_id display_value="x_595775_automat_0_admission_application" element="NULL" name="x_595775_automat_0_admission_application" parent="NULL" relationship="NULL" sys_domain="global" view="66f39ee4c33532100a7bf3ddd4013196">a6f39ee4c33532100a7bf3ddd4013198</list_id><max_value>false</max_value><min_value>false</min_value><position>4</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-10 16:54:30</sys_created_on><sys_id>22f39ee4c33532100a7bf3ddd401319b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-10 16:54:30</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>sys_updated_on</element><list_id display_value="x_595775_automat_0_admission_application" element="NULL" name="x_595775_automat_0_admission_application" parent="NULL" relationship="NULL" sys_domain="global" view="66f39ee4c33532100a7bf3ddd4013196">a6f39ee4c33532100a7bf3ddd4013198</list_id><max_value>false</max_value><min_value>false</min_value><position>5</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-10 16:54:30</sys_created_on><sys_id>a6f39ee4c33532100a7bf3ddd401319b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-10 16:54:30</sys_updated_on></sys_ui_list_element><sys_ui_list action="INSERT_OR_UPDATE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>x_595775_automat_0_admission_application</name><parent/><position/><relationship/><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-10 16:54:30</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a6f39ee4c33532100a7bf3ddd4013198</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_595775_automat_0_admission_application</sys_name><sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package><sys_policy/><sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope><sys_update_name>sys_ui_list_x_595775_automat_0_admission_application_RPTdaf396e4c33532100a7bf3ddd40131ff</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-10 16:54:30</sys_updated_on><sys_user/><view display_value="Rptdaf396e4c33532100a7bf3ddd40131ff" name="RPTdaf396e4c33532100a7bf3ddd40131ff">66f39ee4c33532100a7bf3ddd4013196</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+        <payload_hash>1238311620</payload_hash>
+        <record_name>Admission Application</record_name>
+        <reverted_from/>
+        <source>cbf06937c395ba100a7bf3ddd4013117</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-10 16:54:30</sys_created_on>
+        <sys_id>2af39ee4c33532100a7bf3ddd40131ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b092f8ffc0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-10 16:54:30</sys_updated_on>
+        <type>List Layout</type>
+        <update_guid>eaf39ee4213532100e0e246d8ba4f1aa</update_guid>
+        <update_guid_history>eaf39ee4213532100e0e246d8ba4f1aa:1238311620</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-10 17:36:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_list">sys_ui_list</sys_db_object>
+        <sys_id>0f837e2647f34d44992ed950e39cfda1</sys_id>
+        <sys_metadata>a6f39ee4c33532100a7bf3ddd4013198</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_595775_automat_0_admission_application</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_parent display_value="Admission Application">da9ad96ac35d32100a7bf3ddd40131c9</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_scope_delete display_value="">25e0a9bd0d5f42dc8be15d67601c4a10</sys_scope_delete>
+        <sys_update_name>sys_ui_list_x_595775_automat_0_admission_application_RPTdaf396e4c33532100a7bf3ddd40131ff</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_x_595775_automat_0_admission_application_RPTdaf396e4c33532100a7bf3ddd40131ff">2af39ee4c33532100a7bf3ddd40131ab</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-10 17:36:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

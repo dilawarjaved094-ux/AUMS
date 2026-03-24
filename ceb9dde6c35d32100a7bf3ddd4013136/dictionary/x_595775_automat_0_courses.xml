@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d85085b4c32932100a7bf3ddd40131f1" label="Courses" max_length="40" name="x_595775_automat_0_courses" type="collection">
+        <element label="Credit Hours" max_length="40" name="credit_hours" type="integer"/>
+        <element label="Description" max_length="400" name="description" type="string"/>
+        <element label="Course Name" max_length="40" name="course_name" type="string"/>
+        <element label="Course Code" max_length="40" name="course_code" type="string_full_utf8"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Department" max_length="32" name="department" reference="x_595775_automat_0_admission_application" type="reference"/>
+        <index name="index">
+            <element name="department"/>
+        </index>
+    </element>
+</database>

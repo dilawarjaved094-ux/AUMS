@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="328026c4c32d3e100a7bf3ddd401318a" extends="sys_user" label="Student" max_length="40" name="x_595775_automat_0_student" type="collection">
+        <element label="Department" max_length="32" name="u_department" reference="x_595775_automat_0_admission_application" type="reference"/>
+        <element label="Current Semester" max_length="40" name="current_semester" type="integer"/>
+        <element display="true" label="Registration Number" mandatory="true" max_length="40" name="registration_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="CGPA" max_length="38" name="cgpa" type="decimal"/>
+        <element label="Batch" max_length="40" name="batch" type="string"/>
+        <index name="index">
+            <element name="u_department"/>
+        </index>
+    </element>
+</database>
