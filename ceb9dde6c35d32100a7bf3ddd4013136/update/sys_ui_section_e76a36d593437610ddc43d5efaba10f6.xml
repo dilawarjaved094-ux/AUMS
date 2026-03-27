@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-14 07:44:02</sys_created_on>
-            <sys_id>a2ee00b593833210ddc43d5efaba1053</sys_id>
+            <sys_created_on>2026-03-27 21:31:31</sys_created_on>
+            <sys_id>a7755acbc3377210f324fa0ed4013137</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable_request" sys_domain="global" view="Default view">e76a36d593437610ddc43d5efaba10f6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-14 07:44:02</sys_updated_on>
+            <sys_updated_on>2026-03-27 21:31:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>monday</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-14 07:44:02</sys_created_on>
-            <sys_id>2aee00b593833210ddc43d5efaba1054</sys_id>
+            <sys_created_on>2026-03-27 21:31:31</sys_created_on>
+            <sys_id>6f755acbc3377210f324fa0ed4013138</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable_request" sys_domain="global" view="Default view">e76a36d593437610ddc43d5efaba10f6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-14 07:44:02</sys_updated_on>
+            <sys_updated_on>2026-03-27 21:31:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>tuesday</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-14 07:44:02</sys_created_on>
-            <sys_id>e2ee00b593833210ddc43d5efaba1055</sys_id>
+            <sys_created_on>2026-03-27 21:31:31</sys_created_on>
+            <sys_id>eb755acbc3377210f324fa0ed4013139</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable_request" sys_domain="global" view="Default view">e76a36d593437610ddc43d5efaba10f6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-14 07:44:02</sys_updated_on>
+            <sys_updated_on>2026-03-27 21:31:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>wednesday</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-14 07:44:02</sys_created_on>
-            <sys_id>aeee00b593833210ddc43d5efaba1055</sys_id>
+            <sys_created_on>2026-03-27 21:31:31</sys_created_on>
+            <sys_id>6b755acbc3377210f324fa0ed401313a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable_request" sys_domain="global" view="Default view">e76a36d593437610ddc43d5efaba10f6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-14 07:44:02</sys_updated_on>
+            <sys_updated_on>2026-03-27 21:31:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>thursday</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-14 07:44:02</sys_created_on>
-            <sys_id>6aee00b593833210ddc43d5efaba1056</sys_id>
+            <sys_created_on>2026-03-27 21:31:31</sys_created_on>
+            <sys_id>e7755acbc3377210f324fa0ed401313b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable_request" sys_domain="global" view="Default view">e76a36d593437610ddc43d5efaba10f6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-14 07:44:02</sys_updated_on>
+            <sys_updated_on>2026-03-27 21:31:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>friday</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-14 07:44:02</sys_created_on>
-            <sys_id>26ee00b593833210ddc43d5efaba1057</sys_id>
+            <sys_created_on>2026-03-27 21:31:31</sys_created_on>
+            <sys_id>67755acbc3377210f324fa0ed401313c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable_request" sys_domain="global" view="Default view">e76a36d593437610ddc43d5efaba10f6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-14 07:44:02</sys_updated_on>
+            <sys_updated_on>2026-03-27 21:31:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>saturday</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-14 07:44:02</sys_created_on>
-            <sys_id>eeee00b593833210ddc43d5efaba1057</sys_id>
+            <sys_created_on>2026-03-27 21:31:31</sys_created_on>
+            <sys_id>e3755acbc3377210f324fa0ed401313d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable_request" sys_domain="global" view="Default view">e76a36d593437610ddc43d5efaba10f6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-14 07:44:02</sys_updated_on>
+            <sys_updated_on>2026-03-27 21:31:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,97 +102,153 @@
             <element>sunday</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-14 07:44:02</sys_created_on>
-            <sys_id>aaee00b593833210ddc43d5efaba1058</sys_id>
+            <sys_created_on>2026-03-27 21:31:31</sys_created_on>
+            <sys_id>63755acbc3377210f324fa0ed401313e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable_request" sys_domain="global" view="Default view">e76a36d593437610ddc43d5efaba10f6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-14 07:44:02</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>additional_instructions</element>
-            <position>8</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-14 07:44:02</sys_created_on>
-            <sys_id>66ee00b593833210ddc43d5efaba1059</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable_request" sys_domain="global" view="Default view">e76a36d593437610ddc43d5efaba10f6</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-14 07:44:02</sys_updated_on>
+            <sys_updated_on>2026-03-27 21:31:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>9</position>
+            <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-14 07:44:02</sys_created_on>
-            <sys_id>22ee00b593833210ddc43d5efaba105a</sys_id>
+            <sys_created_on>2026-03-27 21:31:31</sys_created_on>
+            <sys_id>ef755acbc3377210f324fa0ed401313e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable_request" sys_domain="global" view="Default view">e76a36d593437610ddc43d5efaba10f6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-14 07:44:02</sys_updated_on>
+            <sys_updated_on>2026-03-27 21:31:31</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>status</element>
-            <position>10</position>
+            <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-14 07:44:02</sys_created_on>
-            <sys_id>eaee00b593833210ddc43d5efaba105a</sys_id>
+            <sys_created_on>2026-03-27 21:31:31</sys_created_on>
+            <sys_id>6f755acbc3377210f324fa0ed401313f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable_request" sys_domain="global" view="Default view">e76a36d593437610ddc43d5efaba10f6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-14 07:44:02</sys_updated_on>
+            <sys_updated_on>2026-03-27 21:31:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_created_on</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-27 21:31:31</sys_created_on>
+            <sys_id>eb755acbc3377210f324fa0ed4013140</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable_request" sys_domain="global" view="Default view">e76a36d593437610ddc43d5efaba10f6</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-27 21:31:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_created_by</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-27 21:31:31</sys_created_on>
+            <sys_id>6b755acbc3377210f324fa0ed4013141</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable_request" sys_domain="global" view="Default view">e76a36d593437610ddc43d5efaba10f6</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-27 21:31:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>start_time</element>
-            <position>11</position>
+            <position>12</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-14 07:44:02</sys_created_on>
-            <sys_id>a6ee00b593833210ddc43d5efaba105b</sys_id>
+            <sys_created_on>2026-03-27 21:31:31</sys_created_on>
+            <sys_id>e7755acbc3377210f324fa0ed4013142</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable_request" sys_domain="global" view="Default view">e76a36d593437610ddc43d5efaba10f6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-14 07:44:02</sys_updated_on>
+            <sys_updated_on>2026-03-27 21:31:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>end_time</element>
-            <position>12</position>
+            <position>13</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-14 07:44:02</sys_created_on>
-            <sys_id>62ee00b593833210ddc43d5efaba105c</sys_id>
+            <sys_created_on>2026-03-27 21:31:31</sys_created_on>
+            <sys_id>67755acbc3377210f324fa0ed4013143</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable_request" sys_domain="global" view="Default view">e76a36d593437610ddc43d5efaba10f6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-14 07:44:02</sys_updated_on>
+            <sys_updated_on>2026-03-27 21:31:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>lecture_duration</element>
-            <position>13</position>
+            <position>14</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-02-14 07:44:02</sys_created_on>
-            <sys_id>2eee00b593833210ddc43d5efaba105c</sys_id>
+            <sys_created_on>2026-03-27 21:31:31</sys_created_on>
+            <sys_id>e3755acbc3377210f324fa0ed4013144</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable_request" sys_domain="global" view="Default view">e76a36d593437610ddc43d5efaba10f6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-02-14 07:44:02</sys_updated_on>
+            <sys_updated_on>2026-03-27 21:31:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>department</element>
+            <position>15</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-27 21:31:31</sys_created_on>
+            <sys_id>63755acbc3377210f324fa0ed4013145</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable_request" sys_domain="global" view="Default view">e76a36d593437610ddc43d5efaba10f6</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-27 21:31:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>16</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-27 21:31:31</sys_created_on>
+            <sys_id>ef755acbc3377210f324fa0ed4013145</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable_request" sys_domain="global" view="Default view">e76a36d593437610ddc43d5efaba10f6</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-27 21:31:31</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>additional_instructions</element>
+            <position>17</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-27 21:31:31</sys_created_on>
+            <sys_id>6f755acbc3377210f324fa0ed4013146</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable_request" sys_domain="global" view="Default view">e76a36d593437610ddc43d5efaba10f6</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-27 21:31:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

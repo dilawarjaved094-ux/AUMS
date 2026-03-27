@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="0f6a761993437610ddc43d5efaba10b5" label="Timetable Request" max_length="40" name="x_595775_automat_0_timetable_request" type="collection">
-        <element label="Saturday" max_length="40" name="saturday" type="boolean"/>
+    <element attributes="hasLabels=true" db_object_id="0f6a761993437610ddc43d5efaba10b5" label="Timetable Request" max_length="40" name="x_595775_automat_0_timetable_request" type="collection">
+        <element label="Wednesday" max_length="40" name="wednesday" type="boolean"/>
         <element label="Lecture Duration" mandatory="true" max_length="40" name="lecture_duration" type="string_full_utf8"/>
-        <element label="End Time" mandatory="true" max_length="40" name="end_time" type="string_full_utf8"/>
-        <element label="Additional Instructions" max_length="100" name="additional_instructions" type="string"/>
-        <element label="Sunday" max_length="40" name="sunday" type="boolean"/>
+        <element label="Saturday" max_length="40" name="saturday" type="boolean"/>
         <element label="Thursday" max_length="40" name="thursday" type="boolean"/>
+        <element label="Start Time" mandatory="true" max_length="40" name="start_time" type="string_full_utf8"/>
+        <element label="End Time" mandatory="true" max_length="40" name="end_time" type="string_full_utf8"/>
         <element choice="1" label="Status" max_length="40" name="status" read_only="true" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Completed" sequence="2" value="completed"/>
-                <element inactive_on_update="false" label="Submitted" sequence="0" value="submitted"/>
                 <element inactive_on_update="false" label="Error" sequence="3" value="error"/>
+                <element inactive_on_update="false" label="Submitted" sequence="0" value="submitted"/>
                 <element inactive_on_update="false" label="Processing" sequence="1" value="processing"/>
+                <element inactive_on_update="false" label="Completed" sequence="2" value="completed"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
-        <element label="Tuesday" max_length="40" name="tuesday" type="boolean"/>
-        <element label="Wednesday" max_length="40" name="wednesday" type="boolean"/>
-        <element label="Start Time" mandatory="true" max_length="40" name="start_time" type="string_full_utf8"/>
+        <element label="Department" max_length="32" name="department" reference="cmn_department" type="reference"/>
         <element label="Monday" max_length="40" name="monday" type="boolean"/>
         <element label="Friday" max_length="40" name="friday" type="boolean"/>
+        <element label="Additional Instructions" max_length="100" name="additional_instructions" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Tuesday" max_length="40" name="tuesday" type="boolean"/>
+        <element label="Sunday" max_length="40" name="sunday" type="boolean"/>
+        <index name="index">
+            <element name="department"/>
+        </index>
     </element>
 </database>
