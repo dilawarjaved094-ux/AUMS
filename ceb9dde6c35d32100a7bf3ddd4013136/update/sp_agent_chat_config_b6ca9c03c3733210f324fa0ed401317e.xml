@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_agent_chat_config">
+    <sp_agent_chat_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <name>VA AUMS</name>
+        <order>100</order>
+        <portal>81b75d3147032100ba13a5554ee4902b</portal>
+        <public>false</public>
+        <roles/>
+        <server_script><![CDATA[(function($sp) {
+	return {
+		live_agent_queue: $sp.getDisplayValue('sp_chat_queue')
+		};
+})($sp);]]></server_script>
+        <sys_class_name>sp_agent_chat_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-27 12:37:12</sys_created_on>
+        <sys_id>b6ca9c03c3733210f324fa0ed401317e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VA AUMS</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_update_name>sp_agent_chat_config_b6ca9c03c3733210f324fa0ed401317e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-27 12:37:12</sys_updated_on>
+    </sp_agent_chat_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=b6ca9c03c3733210f324fa0ed401317e"/>
+</record_update>
