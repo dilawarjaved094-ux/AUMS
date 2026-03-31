@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="628f1244c32d3e100a7bf3ddd401312f" extends="sys_user" label="Staff" max_length="40" name="x_595775_automat_0_staff" type="collection">
-        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Department" max_length="32" name="u_department" reference="x_595775_automat_0_admission_application" type="reference"/>
         <element label="Designation" max_length="40" name="designation" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
         <index name="index">
             <element name="u_department"/>
         </index>

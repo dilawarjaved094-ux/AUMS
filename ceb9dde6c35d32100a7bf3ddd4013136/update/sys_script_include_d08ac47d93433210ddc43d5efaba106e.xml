@@ -14,167 +14,134 @@
 TimetableHelper.prototype = {
     initialize: function() {},
 
-    generateSchedule: function(requestGR) {
+    /**
+     * Main function called by Flow Designer
+     */
+    processTimetableRequest: function(classes, location, startDate, endDate, ritmSysID) {
         try {
-            // --- STEP 1: GATHER INPUTS ---
-            
-            // 1. Get Boolean Days (Checking individual True/False fields)
-            var activeDays = [];
-            if (requestGR.getValue('u_monday') == '1') activeDays.push('Monday');
-            if (requestGR.getValue('u_tuesday') == '1') activeDays.push('Tuesday');
-            if (requestGR.getValue('u_wednesday') == '1') activeDays.push('Wednesday');
-            if (requestGR.getValue('u_thursday') == '1') activeDays.push('Thursday');
-            if (requestGR.getValue('u_friday') == '1') activeDays.push('Friday');
-            if (requestGR.getValue('u_saturday') == '1') activeDays.push('Saturday');
-            if (requestGR.getValue('u_sunday') == '1') activeDays.push('Sunday');
-            
-            if (activeDays.length === 0) return "Error: No days selected.";
+            // 1. Fetch related Courses and Lecturers for the selected Classes
+            var classDetails = this._getCourseAndLecturerData(classes);
 
-            // 2. Get Time, Duration, and Department
-            var startTime = requestGR.getValue('start_time');
-            var endTime = requestGR.getValue('end_time');
-            var lectureDuration = requestGR.getValue('lecture_duration'); 
-            var additionalInfo = requestGR.getValue('additional_instructions');
-            
-            // NEW: Get the selected Department from the form
-            // Ensure 'department' matches the actual column name on your form
-            var selectedDepartment = requestGR.getValue('department'); 
-            if (!selectedDepartment) return "Error: No department selected.";
+            // 2. Fetch the Child Locations (Rooms) for the selected Location
+            var roomDetails = this._getChildLocations(location);
 
-            // --- STEP 2: GATHER RESOURCES ---
+            // 3. Prepare the Prompt for Gemini with strict JSON and attribute instructions
+            var promptText = "You are an AI timetable generator. Create a university timetable based on the constraints below. " +
+                             "You MUST return the response strictly in JSON format. " +
+                             "Each entry in the timetable MUST include exactly these attributes: " +
+                             "Date, Lecture Start time, Lecture End Time, Class, Lecturers, Courses.\n\n" +
+                             "Constraints:\n" +
+                             "- Term Duration: " + startDate + " to " + endDate + "\n" +
+                             roomDetails + "\n" +
+                             "- Class Details (Includes required Courses & Lecturers):\n" + classDetails;
 
-            // 3. Fetch Data (Filtered by Department)
-            var classes = this._getAllClasses(selectedDepartment);
-            var lecturers = this._getLecturers(selectedDepartment);
-            var rooms = this._getLocations(selectedDepartment); 
+            // 4. Call the Gemini API
+            var rawJsonResponse = this._callGeminiAPI(promptText);
 
-            if (classes.length === 0) return "Error: No active classes found for this department.";
-            if (lecturers.length === 0) return "Error: No available lecturers found for this department.";
-            if (rooms.length === 0) return "Error: No rooms found for this department.";
-
-            // --- STEP 3: BUILD PROMPT ---
-            // (Prompt logic remains the same, but the data is now department-specific)
-            var prompt = "Act as a University Scheduler. Generate a timetable.\n" +
-                "RESOURCES:\n" +
-                "- Classes: " + JSON.stringify(classes) + "\n" +
-                "- Lecturers: " + JSON.stringify(lecturers) + "\n" +
-                "- Available Rooms: " + JSON.stringify(rooms) + "\n" +
-                "CONSTRAINTS:\n" +
-                "- Allowed Days: " + activeDays.join(", ") + "\n" +
-                "- Daily Time Window: " + startTime + " to " + endTime + "\n" +
-                "- Lecture Duration: " + lectureDuration + "\n" +
-                "- User Notes: " + additionalInfo + "\n" +
-                "INSTRUCTIONS:\n" +
-                "1. Calculate how many slots fit in the time window based on the Duration.\n" +
-                "2. Assign a Room to every class. Do not double-book rooms or lecturers.\n" +
-                "3. Ensure every Class gets at least one slot.\n" +
-                "OUTPUT FORMAT:\n" +
-                "Strictly return a JSON array of objects. No markdown. Format: " +
-                "[{ 'class_name': 'String', 'lecturer': 'String', 'day': 'String', 'start_time': 'HH:MM', 'end_time': 'HH:MM', 'room': 'String' }]";
-
-            // --- STEP 4: CALL AI ---
-            
-            var jsonResponse = this._callGemini(prompt);
-            if (!jsonResponse) return "Error: AI generation failed.";
-
-            // --- STEP 5: GENERATE EXCEL (CSV) ---
-            
-            this._createAttachment(jsonResponse, requestGR);
-            
-            return "Success: Timetable attached to record.";
+            if (rawJsonResponse) {
+                // 5. Save the RAW JSON directly to the result table
+                this._saveToResultTable(rawJsonResponse, ritmSysID);
+            } else {
+                gs.error("AUMS Error: Gemini API returned an empty response.");
+            }
 
         } catch (ex) {
-            gs.error("AUMS Scheduler Error: " + ex.message);
-            return "Error: " + ex.message;
+            gs.error("AUMS Error in processTimetableRequest: " + ex.message);
         }
     },
 
-    _getAllClasses: function(departmentId) {
-        var arr = [];
-        var gr = new GlideRecord('x_595775_automat_0_class'); 
-        gr.addQuery('active', true);
-        // ADDED: Filter by department reference
-        gr.addQuery('department', departmentId); 
-        gr.query();
-        while (gr.next()) {
-            arr.push(gr.getValue('name'));
-        }
-        return arr;
-    },
-
-    _getLecturers: function(departmentId) {
-        var arr = [];
-        var gr = new GlideRecord('x_595775_automat_0_staff');
-        // Filter for lecturers if needed: gr.addQuery('title', 'Lecturer');
-        // ADDED: Filter by department reference (assuming sys_user uses the standard 'department' field)
-        gr.addQuery('department', departmentId); 
-        gr.setLimit(20); 
-        gr.query();
-        while (gr.next()) {
-            arr.push(gr.getValue('name'));
-        }
-        return arr;
-    },
-
-    _getLocations: function(departmentId) {
-        var arr = [];
-        var gr = new GlideRecord('cmn_location'); 
-        // You might want to filter only Rooms, e.g., gr.addQuery('cmn_location_type', 'Room');
-        gr.addNotNullQuery('name');
+    /**
+     * Queries the AUMS tables to get child rooms for the selected location.
+     */
+    _getChildLocations: function(locationSysId) {
+        var roomList = [];
         
-        // ADDED: Depending on your setup, cmn_location might not have a direct department field. 
-        // If rooms belong to departments in your AUMS schema, uncomment and adjust the line below:
-        gr.addQuery('u_department', departmentId); 
+        // IMPORTANT: Update this to match your actual Location or Room table
+        var grLocation = new GlideRecord('cmn_location'); 
         
-        gr.setLimit(10); 
-        gr.query();
-        while (gr.next()) {
-            arr.push(gr.getValue('name'));
+        // Assuming 'parent' is the field that links a room to its building/campus
+        grLocation.addQuery('parent', locationSysId); 
+        grLocation.query();
+
+        while (grLocation.next()) {
+            roomList.push(grLocation.name.toString()); 
         }
-        return arr;
+        
+        // Fallback in case the location has no children (e.g., they selected a specific room directly)
+        if (roomList.length === 0) {
+            return "- Available Rooms: " + locationSysId + " (Warning: No child rooms found)";
+        }
+
+        return "- Available Rooms for Scheduling: " + roomList.join(', ');
     },
 
-    _callGemini: function(promptText) {
+    /**
+     * Queries the AUMS tables to get courses and lecturers for the selected classes.
+     */
+    _getCourseAndLecturerData: function(classNames) {
+        var dataString = "";
+        
+        var grCourse = new GlideRecord('x_595775_automat_0_courses'); // REPLACE with your actual mapping table
+        grCourse.addEncodedQuery('u_classIN' + classNames); 
+        grCourse.query();
+
+        while (grCourse.next()) {
+            dataString += "- Class: " + grCourse.u_class.getDisplayValue() + 
+                          " | Course: " + grCourse.u_course_name.getDisplayValue() + 
+                          " | Lecturer: " + grCourse.u_lecturer.getDisplayValue() + "\n";
+        }
+        
+        if (dataString === "") {
+            dataString = "- Selected Classes: " + classNames + " (No specific courses/lecturers found)\n";
+        }
+
+        return dataString;
+    },
+
+    /**
+     * Handles the REST Message to Gemini
+     */
+    _callGeminiAPI: function(prompt) {
         try {
-            var r = new sn_ws.RESTMessageV2('Gemini AI Integration', 'POST'); 
-            var body = { "contents": [{ "parts": [{ "text": promptText }] }] };
+            var r = new sn_ws.RESTMessageV2('Gemini AI Integration', 'TIMETABLE'); 
+            
+            var body = {
+                "contents": [{
+                    "parts": [{
+                        "text": prompt
+                    }]
+                }]
+            };
+            
             r.setRequestBody(JSON.stringify(body));
-
             var response = r.execute();
             var responseBody = response.getBody();
-            if (response.getStatusCode() != 200) return null;
+            var httpStatus = response.getStatusCode();
 
-            var parsed = JSON.parse(responseBody);
-            var aiText = parsed.candidates[0].content.parts[0].text;
-            return aiText.replace(/```json/g, "").replace(/```/g, "").trim();
+            if (httpStatus == 200) {
+                return responseBody;
+            } else {
+                gs.error("AUMS API Call Failed with status " + httpStatus + ". Response: " + responseBody);
+                return null;
+            }
         } catch (ex) {
+            gs.error("AUMS REST Call Exception: " + ex.message);
             return null;
         }
     },
 
-    _createAttachment: function(jsonString, requestGR) {
-        var schedule = JSON.parse(jsonString);
+    /**
+     * Inserts the raw JSON result into your custom table
+     */
+    _saveToResultTable: function(rawJson, ritmID) {
+        var grResult = new GlideRecord('x_595775_automat_0_timetable'); // REPLACE with your actual table name
+        grResult.initialize();
         
-        // 1. Create CSV Header
-        var csvContent = "Class Name,Lecturer,Day,Start Time,End Time,Room\n";
-
-        // 2. Loop and append rows
-        for (var i = 0; i < schedule.length; i++) {
-            var row = [
-                '"' + schedule[i].class_name + '"', 
-                '"' + schedule[i].lecturer + '"',
-                '"' + schedule[i].day + '"',
-                '"' + schedule[i].start_time + '"',
-                '"' + schedule[i].end_time + '"',
-                '"' + schedule[i].room + '"'
-            ].join(",");
-            
-            csvContent += row + "\n";
-        }
-
-        // 3. Create Attachment
-        var attachment = new GlideSysAttachment();
-        attachment.write(requestGR, 'Generated_Timetable.csv', 'text/csv', csvContent);
+        grResult.result = rawJson; 
+        grResult.parent_request = ritmID; 
+        
+        var newSysID = grResult.insert();
+        gs.info("AUMS: Raw JSON Timetable record created successfully: " + newSysID);
     },
 
     type: 'TimetableHelper'
@@ -183,13 +150,13 @@ TimetableHelper.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-02-14 08:31:46</sys_created_on>
         <sys_id>d08ac47d93433210ddc43d5efaba106e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>TimetableHelper</sys_name>
         <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
         <sys_update_name>sys_script_include_d08ac47d93433210ddc43d5efaba106e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-27 22:02:35</sys_updated_on>
+        <sys_updated_on>2026-03-31 23:20:23</sys_updated_on>
     </sys_script_include>
 </record_update>
