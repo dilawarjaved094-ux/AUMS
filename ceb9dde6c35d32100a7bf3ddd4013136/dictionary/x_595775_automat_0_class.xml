@@ -2,18 +2,14 @@
     <element db_object_id="01114138c32932100a7bf3ddd4013162" label="Class" max_length="40" name="x_595775_automat_0_class" type="collection">
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element display="true" label="Class Title" max_length="40" name="class_title" type="string"/>
-        <element label="Room" max_length="32" name="room" reference="cmn_location" type="reference"/>
-        <element label="Course" max_length="32" name="course" reference="x_595775_automat_0_courses" type="reference"/>
+        <element label="Course" max_length="32" name="course" reference="x_595775_automat_0_courses" type="glide_list"/>
         <element label="Semester" max_length="40" name="semester" type="string_full_utf8"/>
-        <element label="Lecturer" max_length="32" name="lecturer" reference="x_595775_automat_0_staff" type="reference"/>
+        <element label="Lecturer" max_length="32" name="lecturer" reference="x_595775_automat_0_staff" type="glide_list"/>
         <index name="index">
             <element name="course"/>
         </index>
         <index name="index2">
             <element name="lecturer"/>
-        </index>
-        <index name="index3">
-            <element name="room"/>
         </index>
     </element>
 </database>

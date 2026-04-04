@@ -9,19 +9,19 @@
         <name>Gemini AI Integration</name>
         <oauth2_profile/>
         <protocol_name/>
-        <rest_endpoint>https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyAmDYd0SiatRQJiWbO-lXDAqR7tZDQagtY</rest_endpoint>
+        <rest_endpoint>https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=AIzaSyBA7hyTUUnt1oTUDHHSpfkZw5iJNuPOfuE</rest_endpoint>
         <sys_class_name>sys_rest_message</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-02-13 06:46:05</sys_created_on>
         <sys_id>4dd7be9193437610ddc43d5efaba109e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Gemini AI Integration</sys_name>
         <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
         <sys_policy/>
         <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
         <sys_update_name>sys_rest_message_4dd7be9193437610ddc43d5efaba109e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-02-13 06:46:05</sys_updated_on>
+        <sys_updated_on>2026-04-02 19:07:25</sys_updated_on>
         <use_basic_auth>false</use_basic_auth>
         <use_mutual_auth>false</use_mutual_auth>
     </sys_rest_message>

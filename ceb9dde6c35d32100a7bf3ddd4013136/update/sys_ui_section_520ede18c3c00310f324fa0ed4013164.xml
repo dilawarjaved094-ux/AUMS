@@ -4,13 +4,97 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-31 19:21:14</sys_created_on>
-            <sys_id>1a0ede18c3c00310f324fa0ed401316b</sys_id>
+            <sys_created_on>2026-04-03 18:56:47</sys_created_on>
+            <sys_id>d935f9d1c3888310f324fa0ed4013115</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable" sys_domain="global" view="Default view">520ede18c3c00310f324fa0ed4013164</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-31 19:21:14</sys_updated_on>
+            <sys_updated_on>2026-04-03 18:56:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-03 18:56:47</sys_created_on>
+            <sys_id>5935f9d1c3888310f324fa0ed4013116</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable" sys_domain="global" view="Default view">520ede18c3c00310f324fa0ed4013164</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-03 18:56:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_class</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-03 18:56:47</sys_created_on>
+            <sys_id>d535f9d1c3888310f324fa0ed4013117</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable" sys_domain="global" view="Default view">520ede18c3c00310f324fa0ed4013164</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-03 18:56:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>course</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-03 18:56:47</sys_created_on>
+            <sys_id>5535f9d1c3888310f324fa0ed4013118</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable" sys_domain="global" view="Default view">520ede18c3c00310f324fa0ed4013164</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-03 18:56:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lecture_start_time</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-03 18:56:47</sys_created_on>
+            <sys_id>d135f9d1c3888310f324fa0ed4013119</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable" sys_domain="global" view="Default view">520ede18c3c00310f324fa0ed4013164</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-03 18:56:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lecture_end_time</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-03 18:56:47</sys_created_on>
+            <sys_id>5135f9d1c3888310f324fa0ed401311a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable" sys_domain="global" view="Default view">520ede18c3c00310f324fa0ed4013164</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-03 18:56:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lecturer</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-03 18:56:47</sys_created_on>
+            <sys_id>dd35f9d1c3888310f324fa0ed401311a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_timetable" sys_domain="global" view="Default view">520ede18c3c00310f324fa0ed4013164</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-03 18:56:47</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

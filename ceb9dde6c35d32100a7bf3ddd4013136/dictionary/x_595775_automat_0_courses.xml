@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="d85085b4c32932100a7bf3ddd40131f1" label="Courses" max_length="40" name="x_595775_automat_0_courses" type="collection">
-        <element label="Course Code" max_length="40" name="course_code" type="string_full_utf8"/>
+        <element display="true" label="Course Code" max_length="40" name="course_code" type="string_full_utf8"/>
         <element label="Credit Hours" max_length="40" name="credit_hours" type="integer"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element label="Department" max_length="32" name="department" reference="x_595775_automat_0_admission_application" type="reference"/>
+        <element label="Department" max_length="32" name="department" reference="cmn_department" type="reference"/>
         <element label="Description" max_length="400" name="description" type="string"/>
+        <element label="Class" max_length="32" name="u_class" reference="x_595775_automat_0_class" type="reference"/>
         <element label="Lecturer" max_length="32" name="lecturer" reference="x_595775_automat_0_staff" type="reference"/>
         <element label="Course Name" max_length="40" name="course_name" type="string"/>
         <index name="index">
@@ -12,6 +13,9 @@
         </index>
         <index name="index2">
             <element name="lecturer"/>
+        </index>
+        <index name="index3">
+            <element name="u_class"/>
         </index>
     </element>
 </database>

@@ -17,32 +17,58 @@ TimetableHelper.prototype = {
     /**
      * Main function called by Flow Designer
      */
-    processTimetableRequest: function(classes, location, startDate, endDate, ritmSysID) {
+    processTimetableRequest: function(classes, location, startDate, endDate, ritmSysID, retryCount) {
+        // Default retryCount to 0 if this is the first time running
+        retryCount = retryCount || 0;
         try {
+            gs.info("AUMS: Starting Timetable Request for RITM: " + ritmSysID);
+
             // 1. Fetch related Courses and Lecturers for the selected Classes
             var classDetails = this._getCourseAndLecturerData(classes);
+            gs.info("AUMS: Retrieved Class Details:\n" + classDetails);
 
             // 2. Fetch the Child Locations (Rooms) for the selected Location
             var roomDetails = this._getChildLocations(location);
+            gs.info("AUMS: Retrieved Room Details: " + roomDetails);
 
             // 3. Prepare the Prompt for Gemini with strict JSON and attribute instructions
             var promptText = "You are an AI timetable generator. Create a university timetable based on the constraints below. " +
-                             "You MUST return the response strictly in JSON format. " +
-                             "Each entry in the timetable MUST include exactly these attributes: " +
-                             "Date, Lecture Start time, Lecture End Time, Class, Lecturers, Courses.\n\n" +
-                             "Constraints:\n" +
-                             "- Term Duration: " + startDate + " to " + endDate + "\n" +
-                             roomDetails + "\n" +
-                             "- Class Details (Includes required Courses & Lecturers):\n" + classDetails;
+                "You MUST return the response strictly in JSON format. " +
+                "Each entry in the timetable MUST include exactly these attributes: " +
+                "Date, Lecture Start time, Lecture End Time, Class, Lecturers, Courses.\n\n" +
+                "Constraints:\n" +
+                "- Term Duration: " + startDate + " to " + endDate + "\n" +
+                roomDetails + "\n" +
+                "- Class Details (Includes required Courses & Lecturers):\n" + classDetails;
+
+            gs.info("AUMS: Final Prompt sent to Gemini:\n" + promptText);
 
             // 4. Call the Gemini API
             var rawJsonResponse = this._callGeminiAPI(promptText);
 
-            if (rawJsonResponse) {
-                // 5. Save the RAW JSON directly to the result table
+            gs.info("AUMS: Raw JSON received from Gemini:\n" + rawJsonResponse);
+
+            if (rawJsonResponse.status === 200 && rawJsonResponse.body) {
+                gs.info("AUMS: Gemini API returned a successful response.");
+                var grResult = new GlideRecord('x_595775_automat_0_timetable');
+                grResult.initialize();
+                grResult.result = (rawJsonResponse);
+                grResult.insert();
+                // 5. Parse and save the data to individual fields
                 this._saveToResultTable(rawJsonResponse, ritmSysID);
             } else {
-                gs.error("AUMS Error: Gemini API returned an empty response.");
+                // Check if the error is Auth/Token related (HTTP 401, 403, or contains "expired")
+                var isAuthError = (rawJsonResponse.status === 401 || rawJsonResponse.status === 403 || (rawJsonResponse.body && rawJsonResponse.body.toLowerCase().indexOf('expired') !== -1));
+
+                if (isAuthError) {
+                    gs.error("AUMS API Retry Aborted: Token Expired or Authentication Error. Please check your Gemini API Key.");
+                } else if (retryCount < 3) {
+                    // It failed for a different reason (like a timeout), so schedule a retry
+                    gs.warn("AUMS API Failed with status " + rawJsonResponse.status + ". Scheduling retry #" + (retryCount + 1));
+                    this._scheduleRetry(classes, location, startDate, endDate, ritmSysID, retryCount + 1);
+                } else {
+                    gs.error("AUMS API Failed: Max retries (3) reached for RITM: " + ritmSysID);
+                }
             }
 
         } catch (ex) {
@@ -54,21 +80,19 @@ TimetableHelper.prototype = {
      * Queries the AUMS tables to get child rooms for the selected location.
      */
     _getChildLocations: function(locationSysId) {
+        gs.info("AUMS: Querying child locations for Parent ID: " + locationSysId);
         var roomList = [];
-        
-        // IMPORTANT: Update this to match your actual Location or Room table
-        var grLocation = new GlideRecord('cmn_location'); 
-        
-        // Assuming 'parent' is the field that links a room to its building/campus
-        grLocation.addQuery('parent', locationSysId); 
+
+        var grLocation = new GlideRecord('cmn_location');
+        grLocation.addQuery('parent', locationSysId);
         grLocation.query();
 
         while (grLocation.next()) {
-            roomList.push(grLocation.name.toString()); 
+            roomList.push(grLocation.name.toString());
         }
-        
-        // Fallback in case the location has no children (e.g., they selected a specific room directly)
+
         if (roomList.length === 0) {
+            gs.info("AUMS: No child rooms found for location. Using Parent ID as fallback.");
             return "- Available Rooms: " + locationSysId + " (Warning: No child rooms found)";
         }
 
@@ -79,20 +103,49 @@ TimetableHelper.prototype = {
      * Queries the AUMS tables to get courses and lecturers for the selected classes.
      */
     _getCourseAndLecturerData: function(classNames) {
+        // 1. SAFETY CHECK: Ensure the variable actually contains data
+        if (!classNames || classNames.toString().trim() === "") {
+            gs.error("AUMS Error: The 'classes' variable passed to the script is empty or undefined.");
+            return "- Selected Classes: None provided.\n";
+        }
+
+        gs.info("AUMS: Querying courses for Classes (Sys IDs): " + classNames);
         var dataString = "";
-        
-        var grCourse = new GlideRecord('x_595775_automat_0_courses'); // REPLACE with your actual mapping table
-        grCourse.addEncodedQuery('u_classIN' + classNames); 
+
+        var grCourse = new GlideRecord('x_595775_automat_0_class');
+
+        // 2. THE FIX: Using 'IN' to handle multiple comma-separated class Sys IDs
+        // NOTE: Ensure your backend field name is actually 'u_class'
+        grCourse.addEncodedQuery('sys_idIN' + classNames);
+
+        // Sort by Class so we can group the output neatly for the AI
+        // grCourse.orderBy('u_class'); 
         grCourse.query();
 
+        var rowCount = 0;
+        var currentClass = "";
+
         while (grCourse.next()) {
-            dataString += "- Class: " + grCourse.u_class.getDisplayValue() + 
-                          " | Course: " + grCourse.u_course_name.getDisplayValue() + 
-                          " | Lecturer: " + grCourse.u_lecturer.getDisplayValue() + "\n";
+            rowCount++;
+            var className = grCourse.class_title.getDisplayValue();
+
+            // 3. GROUPING LOGIC: Creates a header for each class
+            if (className !== currentClass) {
+                dataString += "\nClass: " + grCourse.sys_id + "\n";
+                currentClass = className;
+            }
+
+            // Append courses under the class header
+            dataString += "  - Course: " + grCourse.course +
+                " | Lecturer: " + grCourse.lecturer + "\n";
         }
-        
-        if (dataString === "") {
-            dataString = "- Selected Classes: " + classNames + " (No specific courses/lecturers found)\n";
+
+        gs.info("AUMS: Found " + rowCount + " course/lecturer records.");
+
+        // Fallback if the query ran successfully but found zero matching records
+        if (rowCount === 0) {
+            dataString = "- Selected Classes: " + classNames + " (No specific courses/lecturers found in the database)\n";
+            gs.warn("AUMS Warning: The query ran, but found 0 results. Check if 'u_class' is the correct field name.");
         }
 
         return dataString;
@@ -100,11 +153,16 @@ TimetableHelper.prototype = {
 
     /**
      * Handles the REST Message to Gemini
+     * UPDATED: Now returns a JSON object containing { status, body }
      */
     _callGeminiAPI: function(prompt) {
+        var result = {
+            status: 500,
+            body: ""
+        }; // Default to server error
         try {
-            var r = new sn_ws.RESTMessageV2('Gemini AI Integration', 'TIMETABLE'); 
-            
+            var r = new sn_ws.RESTMessageV2('Gemini AI Integration', 'TIMETABLE');
+
             var body = {
                 "contents": [{
                     "parts": [{
@@ -112,36 +170,98 @@ TimetableHelper.prototype = {
                     }]
                 }]
             };
-            
+
             r.setRequestBody(JSON.stringify(body));
             var response = r.execute();
-            var responseBody = response.getBody();
-            var httpStatus = response.getStatusCode();
+            result.status = response.getStatusCode();
+            result.body = response.getBody();
 
-            if (httpStatus == 200) {
-                return responseBody;
-            } else {
-                gs.error("AUMS API Call Failed with status " + httpStatus + ". Response: " + responseBody);
-                return null;
-            }
+            gs.info("AUMS: Gemini API Response Status: " + result.status);
+            return result;
+
+            // if (httpStatus == 200) {
+            //     return responseBody;
+            // } else {
+            //     gs.error("AUMS: API Call Failed with status " + httpStatus + ". Response: " + responseBody);
+            //     return null;
+            // }
         } catch (ex) {
-            gs.error("AUMS REST Call Exception: " + ex.message);
-            return null;
+            gs.error("AUMS: REST Call Exception: " + ex.message);
+            result.body = ex.message;
+            return result;
         }
     },
 
     /**
-     * Inserts the raw JSON result into your custom table
+     * NEW FUNCTION: Schedules the retry using the Event Queue
+     */
+    _scheduleRetry: function(classes, location, startDate, endDate, ritmSysID, nextRetryCount) {
+        var delayMinutes = 2; // Retry after 2 minutes
+        var gdt = new GlideDateTime();
+        gdt.addSeconds(delayMinutes * 60);
+
+        // Pack all variables into a JSON string so we can pass them safely through the event
+        var eventParams = {
+            classes: classes,
+            location: location,
+            startDate: startDate,
+            endDate: endDate,
+            ritmSysID: ritmSysID,
+            retryCount: nextRetryCount
+        };
+
+        // Fire the event at the scheduled time in the future
+        gs.eventQueueScheduled('x_595775_automat_0.retry_api', null, JSON.stringify(eventParams), ritmSysID, gdt);
+    },
+
+
+    /**
+     * Parses the JSON and inserts individual records into your custom table fields
      */
     _saveToResultTable: function(rawJson, ritmID) {
-        var grResult = new GlideRecord('x_595775_automat_0_timetable'); // REPLACE with your actual table name
-        grResult.initialize();
-        
-        grResult.result = rawJson; 
-        grResult.parent_request = ritmID; 
-        
-        var newSysID = grResult.insert();
-        gs.info("AUMS: Raw JSON Timetable record created successfully: " + newSysID);
+        gs.info("AUMS: Attempting to parse and save records to x_595775_automat_0_timetable.");
+
+        try {
+            // 1. Clean the Markdown formatting if Gemini included it (e.g. ```json ... ```)
+            var cleanString = JSON.parse(rawJson.trim());
+            cleanString = cleanString.candidates[0].content.parts[0].text;
+
+            // 2. Parse the pure JSON string into a JavaScript Array
+            var timetableArray = JSON.parse(cleanString);
+            gs.info(timetableArray.stringify);
+            var recordCount = 0;
+
+            // 3. Loop through the array and create a record for each class session
+            for (var i = 0; i < timetableArray.length; i++) {
+                var entry = timetableArray[i];
+
+                var grResult = new GlideRecord('x_595775_automat_0_timetable');
+                grResult.initialize();
+
+                // Map the JSON attributes to the specific ServiceNow table fields
+                // NOTE: Ensure these backend field names (u_date, etc.) exactly match your table's columns
+                grResult.date = entry["Date"];
+                grResult.lecture_start_time = entry["Lecture Start time"];
+                grResult.lecture_end_time = entry["Lecture End Time"];
+                grResult.u_class = entry["Class"];
+                grResult.lecturer = entry["Lecturers"];
+                grResult.course = entry["Courses"];
+
+                grResult.parent_request = ritmID;
+
+                var newSysID = grResult.insert();
+                if (newSysID) {
+                    recordCount++;
+                } else {
+                    gs.error("AUMS: Failed to insert individual timetable record for Class: " + entry["Class"]);
+                }
+            }
+
+            gs.info("AUMS: Successfully parsed JSON and created " + recordCount + " timetable records.");
+
+        } catch (parseError) {
+            gs.error("AUMS: Failed to parse Gemini JSON or insert records. Error: " + parseError.message);
+        }
     },
 
     type: 'TimetableHelper'
@@ -150,13 +270,13 @@ TimetableHelper.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-02-14 08:31:46</sys_created_on>
         <sys_id>d08ac47d93433210ddc43d5efaba106e</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>TimetableHelper</sys_name>
         <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
         <sys_update_name>sys_script_include_d08ac47d93433210ddc43d5efaba106e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-31 23:20:23</sys_updated_on>
+        <sys_updated_on>2026-04-03 23:49:54</sys_updated_on>
     </sys_script_include>
 </record_update>

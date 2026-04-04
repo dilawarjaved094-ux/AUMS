@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="result" table="x_595775_automat_0_timetable">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="lecturer" table="x_595775_automat_0_timetable">
         <active>true</active>
         <array>false</array>
         <attributes/>
         <audit>false</audit>
         <calculation/>
-        <choice/>
+        <choice>0</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Result</column_label>
+        <column_label>Lecturer</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -21,15 +21,15 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>result</element>
+        <element>lecturer</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="">string_full_utf8</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <mandatory>false</mandatory>
-        <max_length>4000</max_length>
+        <max_length>40</max_length>
         <name>x_595775_automat_0_timetable</name>
         <next_element/>
         <primary>false</primary>
@@ -46,14 +46,14 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-03-31 19:23:47</sys_created_on>
-        <sys_name>Result</sys_name>
+        <sys_created_on>2026-04-03 15:46:46</sys_created_on>
+        <sys_name>Lecturer</sys_name>
         <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
         <sys_policy/>
         <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
-        <sys_update_name>sys_dictionary_x_595775_automat_0_timetable_result</sys_update_name>
+        <sys_update_name>sys_dictionary_x_595775_automat_0_timetable_lecturer</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-03 18:38:03</sys_updated_on>
+        <sys_updated_on>2026-04-03 15:46:48</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

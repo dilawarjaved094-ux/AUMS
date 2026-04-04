@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="fd0e9e18c3c00310f324fa0ed40131a8" label="Timetable" max_length="40" name="x_595775_automat_0_timetable" type="collection">
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
-        <element label="Result" max_length="40" name="result" type="simple_name_values"/>
+        <element label="Result" max_length="4000" name="result" type="string_full_utf8"/>
+        <element label="Lecture Start Time" max_length="40" name="lecture_start_time" type="string"/>
+        <element label="Class" max_length="40" name="u_class" type="string_full_utf8"/>
         <element label="Parent Request" max_length="40" name="parent_request" type="string"/>
+        <element label="Date" max_length="40" name="date" type="glide_date"/>
+        <element label="Lecturer" max_length="40" name="lecturer" type="string"/>
+        <element label="Lecture End Time" max_length="40" name="lecture_end_time" type="string"/>
+        <element label="Course" max_length="40" name="course" type="string_full_utf8"/>
     </element>
 </database>

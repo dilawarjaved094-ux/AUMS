@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>x_595775_automat_0.retry_api</event_name>
+        <name>AUMS API Retry Execution</name>
+        <order>100</order>
+        <script><![CDATA[// This script runs when the 5-minute timer finishes
+var params = JSON.parse(event.parm1); // Unpack the JSON we sent in the event
+
+var helper = new x_595775_automat_0.TimetableHelper(); // Add your scope prefix
+
+// Call the function again, passing in the unpacked data and the updated retry count
+helper.processTimetableRequest(
+    params.classes,
+    params.location,
+    params.startDate,
+    params.endDate,
+    params.ritmSysID,
+    params.retryCount
+);]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-03 23:58:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a2193e95c380c310f324fa0ed401314f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AUMS API Retry Execution</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_update_name>sysevent_script_action_a2193e95c380c310f324fa0ed401314f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-03 23:58:53</sys_updated_on>
+    </sysevent_script_action>
+</record_update>

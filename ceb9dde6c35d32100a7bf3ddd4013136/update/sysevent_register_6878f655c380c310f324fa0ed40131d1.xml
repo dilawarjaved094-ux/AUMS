@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <derived_priority>100</derived_priority>
+        <description>Triggers an API retry for the AUMS Timetable Generator.</description>
+        <event_name>x_595775_automat_0.retry_api</event_name>
+        <fired_by/>
+        <priority>100</priority>
+        <queue/>
+        <suffix>retry_api</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-03 23:52:16</sys_created_on>
+        <sys_id>6878f655c380c310f324fa0ed40131d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_595775_automat_0.retry_api</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_update_name>sysevent_register_6878f655c380c310f324fa0ed40131d1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-03 23:52:16</sys_updated_on>
+        <table>sc_req_item</table>
+    </sysevent_register>
+</record_update>

@@ -4,13 +4,83 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-11-28 19:15:07</sys_created_on>
-            <sys_id>ad118138c32932100a7bf3ddd4013161</sys_id>
+            <sys_created_on>2026-04-02 18:22:37</sys_created_on>
+            <sys_id>07c3e405c3400310f324fa0ed4013157</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_class" sys_domain="global" view="Default view">29118138c32932100a7bf3ddd401315c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-11-28 19:15:07</sys_updated_on>
+            <sys_updated_on>2026-04-02 18:22:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>course</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-02 18:22:37</sys_created_on>
+            <sys_id>cfc3e405c3400310f324fa0ed4013157</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_class" sys_domain="global" view="Default view">29118138c32932100a7bf3ddd401315c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-02 18:22:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lecturer</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-02 18:22:37</sys_created_on>
+            <sys_id>8bc3e405c3400310f324fa0ed4013158</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_class" sys_domain="global" view="Default view">29118138c32932100a7bf3ddd401315c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-02 18:22:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-02 18:22:37</sys_created_on>
+            <sys_id>47c3e405c3400310f324fa0ed4013159</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_class" sys_domain="global" view="Default view">29118138c32932100a7bf3ddd401315c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-02 18:22:37</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>class_title</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-02 18:22:37</sys_created_on>
+            <sys_id>03c3e405c3400310f324fa0ed401315a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_class" sys_domain="global" view="Default view">29118138c32932100a7bf3ddd401315c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-02 18:22:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>semester</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-02 18:22:37</sys_created_on>
+            <sys_id>cbc3e405c3400310f324fa0ed401315a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_class" sys_domain="global" view="Default view">29118138c32932100a7bf3ddd401315c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-02 18:22:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

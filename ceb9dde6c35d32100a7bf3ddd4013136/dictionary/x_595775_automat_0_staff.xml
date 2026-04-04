@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="628f1244c32d3e100a7bf3ddd401312f" extends="sys_user" label="Staff" max_length="40" name="x_595775_automat_0_staff" type="collection">
+        <element label="Course" max_length="32" name="course" reference="x_595775_automat_0_courses" type="reference"/>
         <element label="Department" max_length="32" name="u_department" reference="x_595775_automat_0_admission_application" type="reference"/>
+        <element label="Class" max_length="32" name="class" reference="x_595775_automat_0_class" type="reference"/>
         <element label="Designation" max_length="40" name="designation" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
         <index name="index">
+            <element name="class"/>
+        </index>
+        <index name="index2">
+            <element name="course"/>
+        </index>
+        <index name="index3">
             <element name="u_department"/>
         </index>
     </element>
