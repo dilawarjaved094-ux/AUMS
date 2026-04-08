@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Create Course Assessment">f926c726c30cc710f324fa0ed4013108</cat_item>
+        <cat_variable>IO:04b90beac30cc710f324fa0ed401319f</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Validate Future Due Date</name>
+        <order/>
+        <published_ref/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue == '') {
+        return;
+    }
+	// Split it by the space to grab just the date portion: "2026-04-15"
+    var dateString = newValue.split(' ')[0]; 
+
+    // 2. Split the date portion by the hyphen into Year, Month, Day
+    var dateParts = dateString.split('-');
+    var year = parseInt(dateParts[0], 10);
+    var month = parseInt(dateParts[1], 10) - 1; // JS months are 0-indexed (0-11)
+    var day = parseInt(dateParts[2], 10);
+
+    // 3. Construct a safe Date object that won't break in the browser
+    var selectedDate = new Date(year, month, day);
+
+    // 4. Get today's date and set it to exactly midnight
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    // 5. Run the comparison
+    if (selectedDate < today) {
+		// Throw a prominent red error banner at the top of the form
+        g_form.addErrorMessage('The deadline cannot be in the past. Please select a future date.');
+		// Clear the value
+        g_form.clearValue('due_date');
+    } else {
+		// Clear any existing error banners if they pick a good date
+        g_form.clearMessages();
+    }
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-07 22:34:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>522c4b22c34cc710f324fa0ed401319f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Validate Future Due Date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_update_name>catalog_script_client_522c4b22c34cc710f324fa0ed401319f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-08 17:33:28</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <va_supported>true</va_supported>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+</record_update>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="42d5dea2c384c710f324fa0ed40131bf" label="Course Assessment" max_length="40" name="x_595775_automat_0_course_assessment" type="collection">
+        <element label="Total marks" max_length="40" name="total_marks" type="integer"/>
+        <element label="Title" max_length="40" name="u_title" type="string"/>
+        <element label="Due Date" max_length="40" name="due_date" type="glide_date_time"/>
+        <element label="Course" max_length="32" name="course" reference="x_595775_automat_0_courses" type="reference"/>
+        <element label="Lecturer" max_length="32" name="lecturer" reference="x_595775_automat_0_staff" type="reference"/>
+        <element label="Assessment Type" max_length="40" name="u_assessment_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Assignment" sequence="1" value="assignment"/>
+                <element inactive_on_update="false" label="Quiz" sequence="0" value="quiz"/>
+                <element inactive_on_update="false" label="Project" sequence="2" value="project"/>
+            </choice>
+        </element>
+        <element label="Class" max_length="32" name="u_class" reference="x_595775_automat_0_class" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Instructions" max_length="40" name="instructions" type="html"/>
+        <index name="index">
+            <element name="course"/>
+        </index>
+        <index name="index2">
+            <element name="lecturer"/>
+        </index>
+        <index name="index3">
+            <element name="u_class"/>
+        </index>
+    </element>
+</database>

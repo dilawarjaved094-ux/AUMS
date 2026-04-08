@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Delivery Method">83bb69d6c3404710f324fa0ed40131f7</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-06 20:50:24</sys_created_on>
+        <sys_id>d4db2ddac3404710f324fa0ed40131d0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Standard (3-5 Days)</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_update_name>question_choice_d4db2ddac3404710f324fa0ed40131d0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-06 21:58:06</sys_updated_on>
+        <text>Standard (3-5 Days)</text>
+        <value/>
+    </question_choice>
+    <fx_price action="DELETE" query="id=d4db2ddac3404710f324fa0ed40131d0"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</application>
+        <file_path/>
+        <instance_id>c11b364b3ba3ced0986d048aa4e45aea</instance_id>
+        <instance_name>dev279604</instance_name>
+        <name>question_choice_d4db2ddac3404710f324fa0ed40131d0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><order>100</order><published_ref/><question display_value="Delivery Method">83bb69d6c3404710f324fa0ed40131f7</question><sys_class_name>question_choice</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-06 20:50:24</sys_created_on><sys_id>d4db2ddac3404710f324fa0ed40131d0</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Standard (3-5 Days)</sys_name><sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package><sys_policy/><sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope><sys_update_name>question_choice_d4db2ddac3404710f324fa0ed40131d0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-06 21:58:06</sys_updated_on><text>Standard (3-5 Days)</text><value/></question_choice><fx_price action="delete_multiple" query="id=d4db2ddac3404710f324fa0ed40131d0"/></record_update>]]></payload>
+        <payload_hash>1657199725</payload_hash>
+        <record_name>Standard (3-5 Days)</record_name>
+        <reverted_from/>
+        <source>7f6d1446c33f7210f324fa0ed40131fe</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-06 21:58:06</sys_created_on>
+        <sys_id>ea7bb5dac3c04710f324fa0ed40131d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d64cd8e6d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-06 21:58:06</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>2a7bb5da29c0471098e1343e523a7bd3</update_guid>
+        <update_guid_history>2a7bb5da29c0471098e1343e523a7bd3:1657199725,8e4b31da61c04710df93c1c29c130428:-1684255034,87fba11ebd404710fcd3f7392828e21f:1657199725</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Standard (3-5 Days)">288c395ec3c04710f324fa0ed40131be</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-06 22:02:37</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>5662261188f045408c9ce5942a840400</sys_id>
+        <sys_metadata>d4db2ddac3404710f324fa0ed40131d0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Standard (3-5 Days)</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_parent display_value="Delivery Method">83bb69d6c3404710f324fa0ed40131f7</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_scope_delete display_value="">25e0a9bd0d5f42dc8be15d67601c4a10</sys_scope_delete>
+        <sys_update_name>question_choice_d4db2ddac3404710f324fa0ed40131d0</sys_update_name>
+        <sys_update_version display_value="question_choice_d4db2ddac3404710f324fa0ed40131d0">ea7bb5dac3c04710f324fa0ed40131d4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-06 22:02:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="cfd80df4c36932100a7bf3ddd40131fd" label="Submissions" max_length="40" name="x_595775_automat_0_submissions" type="collection">
-        <element label="Obtained Marks" max_length="40" name="obtained_marks" type="integer"/>
-        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+        <element label="Assessment" max_length="32" name="u_assessment" reference="x_595775_automat_0_course_assessment" type="reference"/>
+        <element label="Submission Date" max_length="40" name="submission_date" type="glide_date_time"/>
+        <element label="Student" max_length="32" name="student" reference="x_595775_automat_0_student" type="reference"/>
+        <element label="State" max_length="40" name="u_state" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Late" sequence="2" value="late"/>
-                <element inactive_on_update="false" label="Pending" sequence="3" value="pending"/>
+                <element inactive_on_update="false" label="Draft" sequence="2" value="draft"/>
                 <element inactive_on_update="false" label="Graded" sequence="1" value="graded"/>
                 <element inactive_on_update="false" label="Submitted" sequence="0" value="submitted"/>
             </choice>
         </element>
-        <element label="Student" max_length="32" name="student" reference="x_595775_automat_0_student" type="reference"/>
-        <element label="Assessment" max_length="32" name="assessment" reference="x_595775_automat_0_quiz_assignments" type="reference"/>
-        <element label="Teacher Remarks" max_length="200" name="teacher_remarks" type="string"/>
+        <element label="Student Feedback" max_length="40" name="u_student_feedback" type="string"/>
+        <element label="Obtained Marks" max_length="40" name="obtained_marks" type="integer"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element label="Submission Date" max_length="40" name="submission_date" type="glide_date_time"/>
         <index name="index">
-            <element name="assessment"/>
+            <element name="student"/>
         </index>
         <index name="index2">
-            <element name="student"/>
+            <element name="u_assessment"/>
         </index>
     </element>
 </database>

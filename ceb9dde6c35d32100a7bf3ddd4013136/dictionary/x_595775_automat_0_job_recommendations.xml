@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a2f623b2c3cc4b10f324fa0ed401310e" label="Job Recommendations" max_length="40" name="x_595775_automat_0_job_recommendations" type="collection">
+        <element label="Raw Response" max_length="10000" name="raw_response" type="string_full_utf8"/>
+        <element label="Target Department" max_length="32" name="u_target_department" reference="cmn_department" type="reference"/>
+        <element label="Location" max_length="40" name="u_location" type="string"/>
+        <element label="External Link" max_length="1024" name="u_external_link" type="url"/>
+        <element label="Job Title" max_length="40" name="u_job_title" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Company" max_length="40" name="u_company" type="string"/>
+        <index name="index">
+            <element name="u_target_department"/>
+        </index>
+    </element>
+</database>
