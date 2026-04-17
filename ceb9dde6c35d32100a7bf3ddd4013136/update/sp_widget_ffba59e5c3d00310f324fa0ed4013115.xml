@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+    var c = this;
+    
+    // Set initial limit to 9 (which equals 3 rows on a standard desktop view)
+    c.displayLimit = 9; 
+    
+    // Function triggered by the 'Show More' button
+    c.showMore = function() {
+        // Since we capped our backend at 20 jobs, we can just reveal the rest all at once
+        c.displayLimit = c.data.jobs.length; 
+    };
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.aums-job-board {
+    padding: 20px;
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
+
+.board-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.board-header h2 {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    font-size: 16px;
+}
+
+.empty-state {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Responsive Grid for Cards */
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Individual Job Card Styling */
+.job-card {
+    background: #ffffff;
+    border: 1px solid #e0e6ed;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    border-color: #b0c4de;
+}
+
+.card-top {
+    margin-bottom: 15px;
+}
+
+.job-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2980b9;
+    margin: 0 0 8px 0;
+    line-height: 1.3;
+}
+
+.company {
+    font-size: 14px;
+    color: #34495e;
+    font-weight: 500;
+}
+
+.card-middle {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.location, .date {
+    font-size: 13px;
+    color: #95a5a6;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+/* Apply Button Styling */
+.apply-btn {
+    width: 100%;
+    background-color: #2980b9;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s;
+}
+
+.apply-btn:hover {
+    background-color: #1c5980;
+}
+
+/* Show More Button Styling */
+.show-more-container {
+    text-align: center;
+    margin-top: 35px;
+    padding-bottom: 20px;
+}
+
+.show-more-btn {
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #2980b9;
+    background-color: transparent;
+    border: 2px solid #2980b9;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+}
+
+.show-more-btn:hover {
+    background-color: #2980b9;
+    color: #ffffff;
+}
+
+.show-more-btn .fa {
+    margin-left: 8px;
+    margin-right: 0;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>aums_career_counseling_portal</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>AUMS Career Counseling Portal</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    // Initialize empty array to hold the jobs
+    data.jobs = [];
+    data.departmentName = "General"; 
+    var userDeptId = "";
+    
+    // 1. THE FIX: Safely query the sys_user table directly from the Scope
+    var currentUser = new GlideRecord('sys_user');
+    if (currentUser.get(gs.getUserID())) {
+        userDeptId = currentUser.getValue('department'); // Grabs the sys_id
+    }
+    
+    // 2. Proceed if the user actually has a department assigned
+    if (userDeptId) {
+        
+        var deptGR = new GlideRecord('cmn_department');
+        if (deptGR.get(userDeptId)) {
+            data.departmentName = deptGR.getValue('name');
+        }
+        
+        // 3. Query your custom table for matching jobs
+        var jobGR = new GlideRecord('x_595775_automat_0_job_recommendations');
+        jobGR.addQuery('u_target_department', userDeptId);
+        jobGR.orderByDesc('sys_created_on'); 
+        jobGR.setLimit(20); 
+        jobGR.query();
+        
+        // 4. Push the results into our data object for the HTML template
+        while (jobGR.next()) {
+            data.jobs.push({
+                title: jobGR.getValue('u_job_title'),
+                company: jobGR.getValue('u_company'),
+                location: jobGR.getValue('u_location'),
+                link: jobGR.getValue('u_external_link'),
+                posted: jobGR.getDisplayValue('sys_created_on').split(' ')[0] 
+            });
+        }
+    }
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-16 21:55:21</sys_created_on>
+        <sys_id>ffba59e5c3d00310f324fa0ed4013115</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>AUMS Career Counseling Portal</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_update_name>sp_widget_ffba59e5c3d00310f324fa0ed4013115</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-17 00:48:20</sys_updated_on>
+        <template><![CDATA[<div class="aums-job-board">
+    <div class="board-header">
+        <h2><i class="fa fa-briefcase"></i> Career Opportunities</h2>
+        <p class="subtitle" ng-if="c.data.jobs.length > 0">
+            Curated specifically for students in the <strong>{{::c.data.departmentName}}</strong> department.
+        </p>
+        
+        <div class="alert alert-warning empty-state" ng-if="c.data.jobs.length === 0">
+            <i class="fa fa-exclamation-circle"></i> No active listings found for the {{::c.data.departmentName}} department today. Check back tomorrow!
+        </div>
+    </div>
+
+    <div class="job-grid" ng-if="c.data.jobs.length > 0">
+        <div class="job-card" ng-repeat="job in c.data.jobs | limitTo: c.displayLimit track by $index">
+            
+            <div class="card-top">
+                <h3 class="job-title">{{::job.title}}</h3>
+                <span class="company"><i class="fa fa-building-o"></i> {{::job.company}}</span>
+            </div>
+            
+            <div class="card-middle">
+                <span class="location"><i class="fa fa-map-marker"></i> {{::job.location}}</span>
+                <span class="date"><i class="fa fa-clock-o"></i> Added: {{::job.posted}}</span>
+            </div>
+            
+            <div class="card-bottom">
+                <a ng-href="{{::job.link}}" target="_blank" class="btn btn-primary apply-btn">
+                    View & Apply <i class="fa fa-external-link"></i>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="show-more-container" ng-if="c.data.jobs.length > c.displayLimit">
+        <button class="btn show-more-btn" ng-click="c.showMore()">
+            Show More Jobs <i class="fa fa-chevron-down"></i>
+        </button>
+    </div>
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>ffba59e5c3d00310f324fa0ed4013115</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-16 21:55:21</sys_created_on>
+        <sys_id>b3ba5de5c3d00310f324fa0ed4013125</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-16 21:55:21</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
