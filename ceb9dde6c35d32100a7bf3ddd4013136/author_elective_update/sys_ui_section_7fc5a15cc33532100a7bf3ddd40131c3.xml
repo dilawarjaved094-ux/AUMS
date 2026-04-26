@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Documents" section_id="7fc5a15cc33532100a7bf3ddd40131c3" sys_domain="global" table="x_595775_automat_0_admission_application" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>profile_picture</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-10 00:58:35</sys_created_on>
+            <sys_id>7f29b210c3fd32100a7bf3ddd40131b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Documents" display_value="Documents" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">7fc5a15cc33532100a7bf3ddd40131c3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-10 00:58:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cnic_copy</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-10 00:58:35</sys_created_on>
+            <sys_id>7329b210c3fd32100a7bf3ddd40131b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Documents" display_value="Documents" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">7fc5a15cc33532100a7bf3ddd40131c3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-10 00:58:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>domicile_certificate</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-10 00:58:35</sys_created_on>
+            <sys_id>3f29b210c3fd32100a7bf3ddd40131b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Documents" display_value="Documents" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">7fc5a15cc33532100a7bf3ddd40131c3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-10 00:58:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>intermediate_a_level_certificate</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-10 00:58:35</sys_created_on>
+            <sys_id>f729b210c3fd32100a7bf3ddd40131b6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Documents" display_value="Documents" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">7fc5a15cc33532100a7bf3ddd40131c3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-10 00:58:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>matriculation_o_level_certificate</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-10 00:58:35</sys_created_on>
+            <sys_id>b329b210c3fd32100a7bf3ddd40131b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Documents" display_value="Documents" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">7fc5a15cc33532100a7bf3ddd40131c3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-10 00:58:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>degree_transcript</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-10 00:58:35</sys_created_on>
+            <sys_id>7f29b210c3fd32100a7bf3ddd40131b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Documents" display_value="Documents" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">7fc5a15cc33532100a7bf3ddd40131c3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-10 00:58:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>paid_fee_receipt</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-10 00:58:35</sys_created_on>
+            <sys_id>3b29b210c3fd32100a7bf3ddd40131b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Documents" display_value="Documents" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">7fc5a15cc33532100a7bf3ddd40131c3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-10 00:58:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Documents</caption>
+            <header>false</header>
+            <name>x_595775_automat_0_admission_application</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-09 18:54:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7fc5a15cc33532100a7bf3ddd40131c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_595775_automat_0_admission_application</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+            <sys_update_name>sys_ui_section_7fc5a15cc33532100a7bf3ddd40131c3</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-09 18:54:19</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</application>
+        <file_path/>
+        <instance_id>c11b364b3ba3ced0986d048aa4e45aea</instance_id>
+        <instance_name>dev279604</instance_name>
+        <name>sys_ui_section_7fc5a15cc33532100a7bf3ddd40131c3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Documents" section_id="7fc5a15cc33532100a7bf3ddd40131c3" sys_domain="global" table="x_595775_automat_0_admission_application" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>profile_picture</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-10 00:58:35</sys_created_on>
+            <sys_id>7f29b210c3fd32100a7bf3ddd40131b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Documents" display_value="Documents" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">7fc5a15cc33532100a7bf3ddd40131c3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-10 00:58:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cnic_copy</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-10 00:58:35</sys_created_on>
+            <sys_id>7329b210c3fd32100a7bf3ddd40131b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Documents" display_value="Documents" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">7fc5a15cc33532100a7bf3ddd40131c3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-10 00:58:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>domicile_certificate</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-10 00:58:35</sys_created_on>
+            <sys_id>3f29b210c3fd32100a7bf3ddd40131b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Documents" display_value="Documents" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">7fc5a15cc33532100a7bf3ddd40131c3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-10 00:58:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>intermediate_a_level_certificate</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-10 00:58:35</sys_created_on>
+            <sys_id>f729b210c3fd32100a7bf3ddd40131b6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Documents" display_value="Documents" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">7fc5a15cc33532100a7bf3ddd40131c3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-10 00:58:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>matriculation_o_level_certificate</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-10 00:58:35</sys_created_on>
+            <sys_id>b329b210c3fd32100a7bf3ddd40131b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Documents" display_value="Documents" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">7fc5a15cc33532100a7bf3ddd40131c3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-10 00:58:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>degree_transcript</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-10 00:58:35</sys_created_on>
+            <sys_id>7f29b210c3fd32100a7bf3ddd40131b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Documents" display_value="Documents" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">7fc5a15cc33532100a7bf3ddd40131c3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-10 00:58:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>paid_fee_receipt</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-10 00:58:35</sys_created_on>
+            <sys_id>3b29b210c3fd32100a7bf3ddd40131b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Documents" display_value="Documents" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">7fc5a15cc33532100a7bf3ddd40131c3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-10 00:58:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Documents</caption>
+            <header>false</header>
+            <name>x_595775_automat_0_admission_application</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-09 18:54:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7fc5a15cc33532100a7bf3ddd40131c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_595775_automat_0_admission_application</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+            <sys_update_name>sys_ui_section_7fc5a15cc33532100a7bf3ddd40131c3</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-09 18:54:19</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>]]></payload>
+        <payload_hash>517964251</payload_hash>
+        <record_name>Admission Application</record_name>
+        <reverted_from/>
+        <source>bd2cdc8ec33f7210f324fa0ed401312f</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-24 10:08:05</sys_created_on>
+        <sys_id>8b4cd802c37f7210f324fa0ed40131e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d1f50daa00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-24 10:08:05</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>4b4cd802f27f7210f9ff1b09a01efee8</update_guid>
+        <update_guid_history>4b4cd802f27f7210f9ff1b09a01efee8:517964251</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-24 17:02:38</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>344e0bd963d3459e8e01bf8c611f37b9</sys_id>
+        <sys_metadata>7fc5a15cc33532100a7bf3ddd40131c3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_595775_automat_0_admission_application</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_parent display_value="Admission Application">da9ad96ac35d32100a7bf3ddd40131c9</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_scope_delete display_value="">25e0a9bd0d5f42dc8be15d67601c4a10</sys_scope_delete>
+        <sys_update_name>sys_ui_section_7fc5a15cc33532100a7bf3ddd40131c3</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_7fc5a15cc33532100a7bf3ddd40131c3">8b4cd802c37f7210f324fa0ed40131e8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-24 17:02:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

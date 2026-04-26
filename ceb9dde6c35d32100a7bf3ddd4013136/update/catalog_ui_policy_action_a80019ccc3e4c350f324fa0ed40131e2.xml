@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item/>
+        <catalog_variable>IO:3196410cc3a4c350f324fa0ed401317b</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>false</mandatory>
+        <order>200</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-24 15:33:32</sys_created_on>
+        <sys_id>a80019ccc3e4c350f324fa0ed40131e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_total_marks</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_a80019ccc3e4c350f324fa0ed40131e2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-24 15:33:32</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Show CGPA field for Bachelors/Masters.">9ccfcd8cc3e4c350f324fa0ed4013197</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>u_total_marks</variable>
+        <variable_set display_value="Academic Record">5bd40908c3a4c350f324fa0ed401312b</variable_set>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=a80019ccc3e4c350f324fa0ed40131e2"/>
+</record_update>

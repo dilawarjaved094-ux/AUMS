@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_degree_level" table="x_595775_automat_0_academic_record" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_degree_level</element>
+            <name>x_595775_automat_0_academic_record</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-24 16:41:35</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_degree_level</sys_name>
+            <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+            <sys_update_name>sys_choice_x_595775_automat_0_academic_record_u_degree_level</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-24 16:41:35</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_degree_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Matriculation/O-Levels</label>
+            <language>en</language>
+            <name>x_595775_automat_0_academic_record</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-24 16:41:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-24 16:41:35</sys_updated_on>
+            <value>matriculation_o_levels</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_degree_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Intermediate/A-Levels</label>
+            <language>en</language>
+            <name>x_595775_automat_0_academic_record</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-24 16:41:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-24 16:41:35</sys_updated_on>
+            <value>intermediate_a_levels</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_degree_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Bachelor's</label>
+            <language>en</language>
+            <name>x_595775_automat_0_academic_record</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-24 16:41:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-24 16:41:35</sys_updated_on>
+            <value>bachelor_s</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_degree_level</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Master's</label>
+            <language>en</language>
+            <name>x_595775_automat_0_academic_record</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-24 16:41:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-24 16:41:35</sys_updated_on>
+            <value>master_s</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

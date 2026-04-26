@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d05ed1c8c368c350f324fa0ed401317a" label="Academic Record" max_length="40" name="x_595775_automat_0_academic_record" type="collection">
+        <element choice="1" label="Degree/Level" max_length="40" name="u_degree_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Master's" sequence="3" value="master_s"/>
+                <element inactive_on_update="false" label="Matriculation/O-Levels" sequence="0" value="matriculation_o_levels"/>
+                <element inactive_on_update="false" label="Intermediate/A-Levels" sequence="1" value="intermediate_a_levels"/>
+                <element inactive_on_update="false" label="Bachelor's" sequence="2" value="bachelor_s"/>
+            </choice>
+        </element>
+        <element label="Institution/Board" max_length="40" name="u_institution_board" type="string"/>
+        <element label="CGPA" max_length="40" name="u_cgpa" type="string"/>
+        <element label="Roll Number" max_length="40" name="u_roll_number" type="string"/>
+        <element label="Passing Year" max_length="40" name="u_passing_year" type="string"/>
+        <element label="Obtained Marks" max_length="40" name="u_obtained_marks" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Total marks" max_length="40" name="u_total_marks" type="string"/>
+        <element label="Admission Application" max_length="32" name="u_admission_application" reference="x_595775_automat_0_admission_application" type="reference"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index2">
+            <element name="u_admission_application"/>
+        </index>
+    </element>
+</database>

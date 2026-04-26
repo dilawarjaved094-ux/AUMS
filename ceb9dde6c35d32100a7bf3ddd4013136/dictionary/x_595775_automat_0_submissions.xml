@@ -2,7 +2,7 @@
     <element db_object_id="cfd80df4c36932100a7bf3ddd40131fd" label="Submissions" max_length="40" name="x_595775_automat_0_submissions" type="collection">
         <element label="Assessment" max_length="32" name="u_assessment" reference="x_595775_automat_0_course_assessment" type="reference"/>
         <element label="Submission Date" max_length="40" name="submission_date" type="glide_date_time"/>
-        <element label="Student" max_length="32" name="student" reference="x_595775_automat_0_student" type="reference"/>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="bdcb83a85f220100a9ad2572f2b4773d" label="Student" max_length="32" name="student" reference="sys_user" reference_qual="roles=x_595775_automat_0.Student^EQ" reference_qual_condition="roles=x_595775_automat_0.Student^EQ" type="reference" use_dynamic_default="true"/>
         <element label="State" max_length="40" name="u_state" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Draft" sequence="2" value="draft"/>

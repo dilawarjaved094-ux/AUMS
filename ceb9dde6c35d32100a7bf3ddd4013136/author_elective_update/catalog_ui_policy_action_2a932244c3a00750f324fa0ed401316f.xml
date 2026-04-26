@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Apply for Admission">2c72e56ac39d32100a7bf3ddd4013147</catalog_item>
+        <catalog_variable>IO:100dee54c37d32100a7bf3ddd4013151</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-24 21:38:29</sys_created_on>
+        <sys_id>2a932244c3a00750f324fa0ed401316f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>guardian_name</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_2a932244c3a00750f324fa0ed401316f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-24 21:38:29</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Make fields visible depending on Father/Guardian.">cab26e80c3a00750f324fa0ed40131f7</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>guardian_name</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=2a932244c3a00750f324fa0ed401316f"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</application>
+        <file_path/>
+        <instance_id>c11b364b3ba3ced0986d048aa4e45aea</instance_id>
+        <instance_name>dev279604</instance_name>
+        <name>catalog_ui_policy_action_2a932244c3a00750f324fa0ed401316f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Apply for Admission">2c72e56ac39d32100a7bf3ddd4013147</catalog_item><catalog_variable>IO:100dee54c37d32100a7bf3ddd4013151</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><field_message/><field_message_type>none</field_message_type><mandatory>false</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-24 21:38:29</sys_created_on><sys_id>2a932244c3a00750f324fa0ed401316f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>guardian_name</sys_name><sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package><sys_policy/><sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope><sys_update_name>catalog_ui_policy_action_2a932244c3a00750f324fa0ed401316f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-24 21:38:29</sys_updated_on><table/><ui_policy display_value="Make fields visible depending on Father/Guardian.">cab26e80c3a00750f324fa0ed40131f7</ui_policy><value/><value_action>ignore</value_action><variable>guardian_name</variable><variable_set/><visible>false</visible></catalog_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=2a932244c3a00750f324fa0ed401316f"/></record_update>]]></payload>
+        <payload_hash>-553116512</payload_hash>
+        <record_name>guardian_name</record_name>
+        <reverted_from/>
+        <source>7f6d1446c33f7210f324fa0ed40131fe</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-24 21:38:29</sys_created_on>
+        <sys_id>2e936244c3a00750f324fa0ed401312c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19dc16e10ab0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-24 21:38:29</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>ea93624483a00750710bf78c0c4f6f2b</update_guid>
+        <update_guid_history>ea93624483a00750710bf78c0c4f6f2b:-553116512</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="guardian_name">7e55e248c3a00750f324fa0ed401310d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-24 21:46:09</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>018ab320f7ce44188016f76de7d2fc40</sys_id>
+        <sys_metadata>2a932244c3a00750f324fa0ed401316f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>guardian_name</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_scope_delete display_value="">25e0a9bd0d5f42dc8be15d67601c4a10</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_2a932244c3a00750f324fa0ed401316f</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_2a932244c3a00750f324fa0ed401316f">2e936244c3a00750f324fa0ed401312c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-24 21:46:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

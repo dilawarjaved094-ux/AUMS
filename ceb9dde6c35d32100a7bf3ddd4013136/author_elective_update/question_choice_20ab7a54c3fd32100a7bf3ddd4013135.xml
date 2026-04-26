@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <misc>0</misc>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Degree Level">e55b6a8cc36d3e100a7bf3ddd40131e6</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-10 01:09:49</sys_created_on>
+        <sys_id>20ab7a54c3fd32100a7bf3ddd4013135</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>UnderGraduate</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_update_name>question_choice_20ab7a54c3fd32100a7bf3ddd4013135</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-10 01:10:08</sys_updated_on>
+        <text>UnderGraduate</text>
+        <value>under_graduate</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=20ab7a54c3fd32100a7bf3ddd4013135"/>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>20ab7a54c3fd32100a7bf3ddd4013135</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-10 01:09:49</sys_created_on>
+        <sys_id>98cb7e54c3fd32100a7bf3ddd401313d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-10 01:09:49</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>20ab7a54c3fd32100a7bf3ddd4013135</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-10 01:09:49</sys_created_on>
+        <sys_id>50cb7e54c3fd32100a7bf3ddd401313d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-10 01:09:49</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</application>
+        <file_path/>
+        <instance_id>c11b364b3ba3ced0986d048aa4e45aea</instance_id>
+        <instance_name>dev279604</instance_name>
+        <name>question_choice_20ab7a54c3fd32100a7bf3ddd4013135</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <misc>0</misc>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Degree Level">e55b6a8cc36d3e100a7bf3ddd40131e6</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-10 01:09:49</sys_created_on>
+        <sys_id>20ab7a54c3fd32100a7bf3ddd4013135</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>UnderGraduate</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_update_name>question_choice_20ab7a54c3fd32100a7bf3ddd4013135</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-10 01:10:08</sys_updated_on>
+        <text>UnderGraduate</text>
+        <value>under_graduate</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=20ab7a54c3fd32100a7bf3ddd4013135"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>20ab7a54c3fd32100a7bf3ddd4013135</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-10 01:09:49</sys_created_on>
+        <sys_id>98cb7e54c3fd32100a7bf3ddd401313d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-10 01:09:49</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>20ab7a54c3fd32100a7bf3ddd4013135</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-10 01:09:49</sys_created_on>
+        <sys_id>50cb7e54c3fd32100a7bf3ddd401313d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-10 01:09:49</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>]]></payload>
+        <payload_hash>-1008403546</payload_hash>
+        <record_name>UnderGraduate</record_name>
+        <reverted_from/>
+        <source>bd2cdc8ec33f7210f324fa0ed401312f</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-24 10:07:56</sys_created_on>
+        <sys_id>f84cd002c37f7210f324fa0ed4013153</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d1f50b5a40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-24 10:07:56</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>b84cd002697f7210fff4066f9db48e53</update_guid>
+        <update_guid_history>b84cd002697f7210fff4066f9db48e53:-1008403546</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="UnderGraduate">d696a20cc3a00750f324fa0ed401314d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-24 21:51:35</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>0fcd7c246de541bc966cfda3f0c8f289</sys_id>
+        <sys_metadata>20ab7a54c3fd32100a7bf3ddd4013135</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>UnderGraduate</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_parent display_value="Degree Level">e55b6a8cc36d3e100a7bf3ddd40131e6</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_scope_delete display_value="">25e0a9bd0d5f42dc8be15d67601c4a10</sys_scope_delete>
+        <sys_update_name>question_choice_20ab7a54c3fd32100a7bf3ddd4013135</sys_update_name>
+        <sys_update_version display_value="question_choice_20ab7a54c3fd32100a7bf3ddd4013135">f84cd002c37f7210f324fa0ed4013153</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-24 21:51:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

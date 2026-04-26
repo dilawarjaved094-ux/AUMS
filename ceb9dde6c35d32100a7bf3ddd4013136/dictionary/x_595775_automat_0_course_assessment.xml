@@ -4,7 +4,7 @@
         <element label="Title" max_length="40" name="u_title" type="string"/>
         <element label="Due Date" max_length="40" name="due_date" type="glide_date_time"/>
         <element label="Course" max_length="32" name="course" reference="x_595775_automat_0_courses" type="reference"/>
-        <element label="Lecturer" max_length="32" name="lecturer" reference="x_595775_automat_0_staff" type="reference"/>
+        <element label="Lecturer" max_length="32" name="lecturer" reference="sys_user" reference_qual="roles=x_595775_automat_0.Lecturer^EQ" reference_qual_condition="roles=x_595775_automat_0.Lecturer^EQ" type="reference"/>
         <element label="Assessment Type" max_length="40" name="u_assessment_type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Assignment" sequence="1" value="assignment"/>

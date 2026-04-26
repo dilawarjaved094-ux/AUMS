@@ -10,7 +10,7 @@
         <conversational_label/>
         <create_roles/>
         <default_html_value/>
-        <default_value/>
+        <default_value>javascript:gs.getUserID();</default_value>
         <delete_roles/>
         <delivery_plan/>
         <description/>
@@ -41,7 +41,7 @@
         <lookup_value/>
         <macro/>
         <macroponent/>
-        <mandatory>true</mandatory>
+        <mandatory>false</mandatory>
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
@@ -53,7 +53,7 @@
         <pricing_implications>false</pricing_implications>
         <published_ref/>
         <question_text>Requested for</question_text>
-        <read_only>false</read_only>
+        <read_only>true</read_only>
         <read_roles/>
         <read_script/>
         <rec_lookup_price/>
@@ -82,14 +82,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-07 15:56:11</sys_created_on>
         <sys_id>3102f56ac340c710f324fa0ed4013161</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Requested for</sys_name>
         <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
         <sys_policy/>
         <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
         <sys_update_name>item_option_new_3102f56ac340c710f324fa0ed4013161</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-07 17:17:41</sys_updated_on>
+        <sys_updated_on>2026-04-25 20:07:35</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>

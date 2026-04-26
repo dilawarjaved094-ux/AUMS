@@ -4,13 +4,13 @@
             <element>email_address</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-09 18:59:56</sys_created_on>
-            <sys_id>0a172110c37532100a7bf3ddd4013160</sys_id>
+            <sys_created_on>2026-04-24 17:02:39</sys_created_on>
+            <sys_id>0674ad08c3a8c350f324fa0ed4013193</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">f2ebdd58c3f132100a7bf3ddd4013192</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-09 18:59:56</sys_updated_on>
+            <sys_updated_on>2026-04-24 17:02:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,69 +18,97 @@
             <element>state</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-09 18:59:56</sys_created_on>
-            <sys_id>c2172110c37532100a7bf3ddd4013161</sys_id>
+            <sys_created_on>2026-04-24 17:02:39</sys_created_on>
+            <sys_id>8274ad08c3a8c350f324fa0ed4013194</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">f2ebdd58c3f132100a7bf3ddd4013192</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-09 18:59:56</sys_updated_on>
+            <sys_updated_on>2026-04-24 17:02:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>emergency_contact_person</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-24 17:02:39</sys_created_on>
+            <sys_id>0274ad08c3a8c350f324fa0ed4013195</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">f2ebdd58c3f132100a7bf3ddd4013192</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-24 17:02:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>mailing_address</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-09 18:59:56</sys_created_on>
-            <sys_id>8e172110c37532100a7bf3ddd4013161</sys_id>
+            <sys_created_on>2026-04-24 17:02:39</sys_created_on>
+            <sys_id>8e74ad08c3a8c350f324fa0ed4013195</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">f2ebdd58c3f132100a7bf3ddd4013192</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-09 18:59:56</sys_updated_on>
+            <sys_updated_on>2026-04-24 17:02:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-09 18:59:56</sys_created_on>
-            <sys_id>4a172110c37532100a7bf3ddd4013162</sys_id>
+            <sys_created_on>2026-04-24 17:02:39</sys_created_on>
+            <sys_id>0e74ad08c3a8c350f324fa0ed4013196</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">f2ebdd58c3f132100a7bf3ddd4013192</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-09 18:59:56</sys_updated_on>
+            <sys_updated_on>2026-04-24 17:02:39</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>mobile_number</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-09 18:59:56</sys_created_on>
-            <sys_id>06172110c37532100a7bf3ddd4013163</sys_id>
+            <sys_created_on>2026-04-24 17:02:39</sys_created_on>
+            <sys_id>8a74ad08c3a8c350f324fa0ed4013197</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">f2ebdd58c3f132100a7bf3ddd4013192</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-09 18:59:56</sys_updated_on>
+            <sys_updated_on>2026-04-24 17:02:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>address</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-12-09 18:59:56</sys_created_on>
-            <sys_id>ce172110c37532100a7bf3ddd4013163</sys_id>
+            <sys_created_on>2026-04-24 17:02:39</sys_created_on>
+            <sys_id>0a74ad08c3a8c350f324fa0ed4013198</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">f2ebdd58c3f132100a7bf3ddd4013192</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-12-09 18:59:56</sys_updated_on>
+            <sys_updated_on>2026-04-24 17:02:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>emergency_contact_number</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-24 17:02:39</sys_created_on>
+            <sys_id>8674ad08c3a8c350f324fa0ed4013199</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Contact Details" display_value="Contact Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">f2ebdd58c3f132100a7bf3ddd4013192</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-24 17:02:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

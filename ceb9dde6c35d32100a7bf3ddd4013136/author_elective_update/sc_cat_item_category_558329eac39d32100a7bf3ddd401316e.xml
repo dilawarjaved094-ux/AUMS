@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Apply for Admission">2c72e56ac39d32100a7bf3ddd4013147</sc_cat_item>
+        <sc_category display_value="Can We Help You?">e15706fc0a0a0aa7007fc21e1ab70c2f</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-21 21:59:15</sys_created_on>
+        <sys_id>558329eac39d32100a7bf3ddd401316e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Can We Help You?.Apply for Admission</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_update_name>sc_cat_item_category_558329eac39d32100a7bf3ddd401316e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-21 21:59:15</sys_updated_on>
+    </sc_cat_item_category>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</application>
+        <file_path/>
+        <instance_id>c11b364b3ba3ced0986d048aa4e45aea</instance_id>
+        <instance_name>dev279604</instance_name>
+        <name>sc_cat_item_category_558329eac39d32100a7bf3ddd401316e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Apply for Admission">2c72e56ac39d32100a7bf3ddd4013147</sc_cat_item>
+        <sc_category display_value="Can We Help You?">e15706fc0a0a0aa7007fc21e1ab70c2f</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-21 21:59:15</sys_created_on>
+        <sys_id>558329eac39d32100a7bf3ddd401316e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Can We Help You?.Apply for Admission</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_update_name>sc_cat_item_category_558329eac39d32100a7bf3ddd401316e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-21 21:59:15</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>]]></payload>
+        <payload_hash>1926633432</payload_hash>
+        <record_name>Can We Help You?.Apply for Admission</record_name>
+        <reverted_from/>
+        <source>bd2cdc8ec33f7210f324fa0ed401312f</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-24 10:07:56</sys_created_on>
+        <sys_id>f84cd002c37f7210f324fa0ed401317e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d1f50b6b00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-24 10:07:56</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>b84cd002827f721032e057282d5e927e</update_guid>
+        <update_guid_history>b84cd002827f721032e057282d5e927e:1926633432</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Can We Help You?.Apply for Admission">a2ae0d3bc3184350f324fa0ed4013166</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-23 20:48:54</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>04227b54a8cb41e582787252a9f80f31</sys_id>
+        <sys_metadata>558329eac39d32100a7bf3ddd401316e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Can We Help You?.Apply for Admission</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_scope_delete display_value="">25e0a9bd0d5f42dc8be15d67601c4a10</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_558329eac39d32100a7bf3ddd401316e</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_558329eac39d32100a7bf3ddd401316e">f84cd002c37f7210f324fa0ed401317e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-23 20:48:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

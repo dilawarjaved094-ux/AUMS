@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Degree Level">e55b6a8cc36d3e100a7bf3ddd40131e6</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-10 01:10:56</sys_created_on>
+        <sys_id>eacbbe54c3fd32100a7bf3ddd4013194</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Post Graduate</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_update_name>question_choice_eacbbe54c3fd32100a7bf3ddd4013194</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-10 01:10:56</sys_updated_on>
+        <text>Post Graduate</text>
+        <value>post_graduate</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=eacbbe54c3fd32100a7bf3ddd4013194"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</application>
+        <file_path/>
+        <instance_id>c11b364b3ba3ced0986d048aa4e45aea</instance_id>
+        <instance_name>dev279604</instance_name>
+        <name>question_choice_eacbbe54c3fd32100a7bf3ddd4013194</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Degree Level">e55b6a8cc36d3e100a7bf3ddd40131e6</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-10 01:10:56</sys_created_on>
+        <sys_id>eacbbe54c3fd32100a7bf3ddd4013194</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Post Graduate</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_update_name>question_choice_eacbbe54c3fd32100a7bf3ddd4013194</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-10 01:10:56</sys_updated_on>
+        <text>Post Graduate</text>
+        <value>post_graduate</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=eacbbe54c3fd32100a7bf3ddd4013194"/>
+</record_update>]]></payload>
+        <payload_hash>-1136886057</payload_hash>
+        <record_name>Post Graduate</record_name>
+        <reverted_from/>
+        <source>bd2cdc8ec33f7210f324fa0ed401312f</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-24 10:07:56</sys_created_on>
+        <sys_id>b04cd002c37f7210f324fa0ed4013166</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d1f50b61f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-24 10:07:56</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>704cd002a37f72103eccb698cdace666</update_guid>
+        <update_guid_history>704cd002a37f72103eccb698cdace666:-1136886057</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Post Graduate">6296a20cc3a00750f324fa0ed401317a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-24 21:51:35</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>140072f27df9469582be7d94808972b9</sys_id>
+        <sys_metadata>eacbbe54c3fd32100a7bf3ddd4013194</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Post Graduate</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_parent display_value="Degree Level">e55b6a8cc36d3e100a7bf3ddd40131e6</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_scope_delete display_value="">25e0a9bd0d5f42dc8be15d67601c4a10</sys_scope_delete>
+        <sys_update_name>question_choice_eacbbe54c3fd32100a7bf3ddd4013194</sys_update_name>
+        <sys_update_version display_value="question_choice_eacbbe54c3fd32100a7bf3ddd4013194">b04cd002c37f7210f324fa0ed4013166</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-24 21:51:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

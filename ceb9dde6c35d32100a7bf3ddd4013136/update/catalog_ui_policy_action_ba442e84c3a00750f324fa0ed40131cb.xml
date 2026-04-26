@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Apply for Admission">2c72e56ac39d32100a7bf3ddd4013147</catalog_item>
+        <catalog_variable>IO:100dee54c37d32100a7bf3ddd4013151</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-24 21:41:44</sys_created_on>
+        <sys_id>ba442e84c3a00750f324fa0ed40131cb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>guardian_name</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_ba442e84c3a00750f324fa0ed40131cb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-24 21:46:39</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Make fields visible for Guardian">c904a284c3a00750f324fa0ed40131c0</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>guardian_name</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=ba442e84c3a00750f324fa0ed40131cb"/>
+</record_update>

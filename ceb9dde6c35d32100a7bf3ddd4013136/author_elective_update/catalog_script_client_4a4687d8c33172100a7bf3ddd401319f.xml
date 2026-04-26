@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="DELETE">
+        <active>false</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Apply for Admission">2c72e56ac39d32100a7bf3ddd4013147</cat_item>
+        <cat_variable>IO:68fbaad0c37d32100a7bf3ddd4013168</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Calculate Percentage (Total Change)</name>
+        <order/>
+        <published_ref/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue == '') {
+        return;
+    }
+
+    // 1. Get both values
+    // We re-fetch both values to ensure we always have the latest numbers
+    var total = parseFloat(g_form.getValue('total_marks'));
+    var obtained = parseFloat(g_form.getValue('obtained_marks'));
+
+    // 2. Clear any previous error messages
+    // This removes the red text if the user fixes their mistake
+    g_form.hideFieldMsg('obtained_marks');
+
+    // 3. Check if both fields actually have numbers in them
+    if (!isNaN(total) && !isNaN(obtained)) {
+
+        // --- VALIDATION START ---
+
+        // Check A: Is obtained higher than total?
+        if (obtained > total) {
+            g_form.showFieldMsg('obtained_marks', 'Obtained marks cannot be greater than Total marks.', 'error');
+            g_form.setValue('percentage', ''); // Clear the result so they can't submit invalid data
+            return; // Stop the script here
+        }
+
+        // Check B: Is Total zero? (Prevents division by zero)
+        if (total <= 0) {
+            // You might not need an error here, but we shouldn't calculate
+            return;
+        }
+
+        // --- VALIDATION END ---
+
+        // 4. Calculate Percentage
+        var result = (obtained / total) * 100;
+
+        // 5. Set Value (formatted to 2 decimal places)
+        g_form.setValue('percentage', result.toFixed(2));
+
+    } else {
+        // If one field is empty, clear the percentage
+        g_form.setValue('percentage', '');
+    }
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-10 01:56:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4a4687d8c33172100a7bf3ddd401319f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Calculate Percentage (Total Change)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_update_name>catalog_script_client_4a4687d8c33172100a7bf3ddd401319f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-24 20:11:30</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <va_supported>true</va_supported>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</application>
+        <file_path/>
+        <instance_id>c11b364b3ba3ced0986d048aa4e45aea</instance_id>
+        <instance_name>dev279604</instance_name>
+        <name>catalog_script_client_4a4687d8c33172100a7bf3ddd401319f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="catalog_script_client"&gt;&lt;catalog_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_catalog&gt;true&lt;/applies_catalog&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;applies_req_item&gt;false&lt;/applies_req_item&gt;&lt;applies_sc_task&gt;false&lt;/applies_sc_task&gt;&lt;applies_target_record&gt;false&lt;/applies_target_record&gt;&lt;applies_to&gt;item&lt;/applies_to&gt;&lt;cat_item display_value="Apply for Admission"&gt;2c72e56ac39d32100a7bf3ddd4013147&lt;/cat_item&gt;&lt;cat_variable&gt;IO:68fbaad0c37d32100a7bf3ddd4013168&lt;/cat_variable&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Calculate Percentage (Total Change)&lt;/name&gt;&lt;order/&gt;&lt;published_ref/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue == '') {
+        return;
+    }
+
+    // 1. Get both values
+    // We re-fetch both values to ensure we always have the latest numbers
+    var total = parseFloat(g_form.getValue('total_marks'));
+    var obtained = parseFloat(g_form.getValue('obtained_marks'));
+
+    // 2. Clear any previous error messages
+    // This removes the red text if the user fixes their mistake
+    g_form.hideFieldMsg('obtained_marks');
+
+    // 3. Check if both fields actually have numbers in them
+    if (!isNaN(total) &amp;&amp; !isNaN(obtained)) {
+
+        // --- VALIDATION START ---
+
+        // Check A: Is obtained higher than total?
+        if (obtained &gt; total) {
+            g_form.showFieldMsg('obtained_marks', 'Obtained marks cannot be greater than Total marks.', 'error');
+            g_form.setValue('percentage', ''); // Clear the result so they can't submit invalid data
+            return; // Stop the script here
+        }
+
+        // Check B: Is Total zero? (Prevents division by zero)
+        if (total &lt;= 0) {
+            // You might not need an error here, but we shouldn't calculate
+            return;
+        }
+
+        // --- VALIDATION END ---
+
+        // 4. Calculate Percentage
+        var result = (obtained / total) * 100;
+
+        // 5. Set Value (formatted to 2 decimal places)
+        g_form.setValue('percentage', result.toFixed(2));
+
+    } else {
+        // If one field is empty, clear the percentage
+        g_form.setValue('percentage', '');
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;catalog_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-12-10 01:56:29&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;4a4687d8c33172100a7bf3ddd401319f&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;Calculate Percentage (Total Change)&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="AUMS" source="x_595775_automat_0"&gt;ceb9dde6c35d32100a7bf3ddd4013136&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="AUMS"&gt;ceb9dde6c35d32100a7bf3ddd4013136&lt;/sys_scope&gt;&lt;sys_update_name&gt;catalog_script_client_4a4687d8c33172100a7bf3ddd401319f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-24 20:11:30&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;va_supported&gt;true&lt;/va_supported&gt;&lt;variable_set/&gt;&lt;view/&gt;&lt;/catalog_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-793027533</payload_hash>
+        <record_name>Calculate Percentage (Total Change)</record_name>
+        <reverted_from/>
+        <source>7f6d1446c33f7210f324fa0ed40131fe</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-24 20:11:30</sys_created_on>
+        <sys_id>98bf8e4cc3ecc350f324fa0ed401310f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19dc11e6f810000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-24 20:11:30</sys_updated_on>
+        <type>Catalog Client Scripts</type>
+        <update_guid>98bf8e4cfbecc350464384b4f281ae0e</update_guid>
+        <update_guid_history>98bf8e4cfbecc350464384b4f281ae0e:-793027533,884c10025c7f72105d60894aac9165e8:-2060126588</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Calculate Percentage (Total Change)">c0dd30b4c3e04b50f324fa0ed401310f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-26 22:09:12</sys_created_on>
+        <sys_db_object display_value="" name="catalog_script_client">catalog_script_client</sys_db_object>
+        <sys_id>3f02b5f36a3e4db091060aceeee7c900</sys_id>
+        <sys_metadata>4a4687d8c33172100a7bf3ddd401319f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Calculate Percentage (Total Change)</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_scope_delete display_value="">25e0a9bd0d5f42dc8be15d67601c4a10</sys_scope_delete>
+        <sys_update_name>catalog_script_client_4a4687d8c33172100a7bf3ddd401319f</sys_update_name>
+        <sys_update_version display_value="catalog_script_client_4a4687d8c33172100a7bf3ddd401319f">98bf8e4cc3ecc350f324fa0ed401310f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-26 22:09:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

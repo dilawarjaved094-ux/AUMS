@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>200</order>
+        <published_ref/>
+        <question display_value="Degree/Level">4455c548c3a4c350f324fa0ed4013172</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-24 14:49:11</sys_created_on>
+        <sys_id>89d5c188c3a4c350f324fa0ed40131e3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Intermediate/A-Levels</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_update_name>question_choice_89d5c188c3a4c350f324fa0ed40131e3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-26 21:32:37</sys_updated_on>
+        <text>Intermediate/A-Levels</text>
+        <value>intermediate_a_levels</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=89d5c188c3a4c350f324fa0ed40131e3"/>
+</record_update>
