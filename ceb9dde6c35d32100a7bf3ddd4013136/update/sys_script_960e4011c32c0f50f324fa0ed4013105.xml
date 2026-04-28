@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_595775_automat_0_academic_record</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Calculate Degree Percentage</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+    // 1. Get the values directly from the server object
+    var degreeLevel = current.getValue('u_degree_level'); 
+    var obtained = parseFloat(current.getValue('u_obtained_marks')) || 0;
+    var total = parseFloat(current.getValue('u_total_marks')) || 0;
+    var cgpa = parseFloat(current.getValue('u_cgpa')) || 0;
+
+    var finalPercentage = 0.0;
+
+    // 2. Calculate logic
+    if (degreeLevel == 'bachelor_s' || degreeLevel == 'master_s') {
+        if (cgpa > 0 && cgpa <= 4.0) {
+            finalPercentage = (cgpa / 4.0) * 100;
+        }
+    } else {
+        if (total > 0) {
+            finalPercentage = (obtained / total) * 100;
+        }
+    }
+
+    // 3. Force the value into the database field before saving
+    current.setValue('u_percentage', finalPercentage.toFixed(2));
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-28 07:59:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>960e4011c32c0f50f324fa0ed4013105</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Calculate Degree Percentage</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_update_name>sys_script_960e4011c32c0f50f324fa0ed4013105</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-28 07:59:28</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=960e4011c32c0f50f324fa0ed4013105"/>
+</record_update>

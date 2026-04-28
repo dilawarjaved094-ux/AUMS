@@ -4,13 +4,13 @@
             <element>u_father_guardian</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-24 17:02:39</sys_created_on>
-            <sys_id>c674ad08c3a8c350f324fa0ed40131d7</sys_id>
+            <sys_created_on>2026-04-28 06:27:08</sys_created_on>
+            <sys_id>bf593b81c3680f50f324fa0ed401313e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Father/Guardian Details" display_value="Father/Guardian Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">71b4ed98c33532100a7bf3ddd40131b4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-24 17:02:39</sys_updated_on>
+            <sys_updated_on>2026-04-28 06:27:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,41 +18,41 @@
             <element>father_name</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-24 17:02:39</sys_created_on>
-            <sys_id>4674ad08c3a8c350f324fa0ed40131d8</sys_id>
+            <sys_created_on>2026-04-28 06:27:08</sys_created_on>
+            <sys_id>3f593b81c3680f50f324fa0ed401313f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Father/Guardian Details" display_value="Father/Guardian Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">71b4ed98c33532100a7bf3ddd40131b4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-24 17:02:39</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>father_mobile</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-24 17:02:39</sys_created_on>
-            <sys_id>c274ad08c3a8c350f324fa0ed40131d9</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Father/Guardian Details" display_value="Father/Guardian Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">71b4ed98c33532100a7bf3ddd40131b4</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-24 17:02:39</sys_updated_on>
+            <sys_updated_on>2026-04-28 06:27:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>father_cnic</element>
-            <position>3</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-24 17:02:39</sys_created_on>
-            <sys_id>4274ad08c3a8c350f324fa0ed40131da</sys_id>
+            <sys_created_on>2026-04-28 06:27:08</sys_created_on>
+            <sys_id>bb593b81c3680f50f324fa0ed4013140</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Father/Guardian Details" display_value="Father/Guardian Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">71b4ed98c33532100a7bf3ddd40131b4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-24 17:02:39</sys_updated_on>
+            <sys_updated_on>2026-04-28 06:27:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>father_mobile</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-28 06:27:08</sys_created_on>
+            <sys_id>3b593b81c3680f50f324fa0ed4013141</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Father/Guardian Details" display_value="Father/Guardian Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">71b4ed98c33532100a7bf3ddd40131b4</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-28 06:27:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,41 +60,55 @@
             <element>guardian_name</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-24 17:02:39</sys_created_on>
-            <sys_id>ce74ad08c3a8c350f324fa0ed40131da</sys_id>
+            <sys_created_on>2026-04-28 06:27:08</sys_created_on>
+            <sys_id>b7593b81c3680f50f324fa0ed4013142</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Father/Guardian Details" display_value="Father/Guardian Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">71b4ed98c33532100a7bf3ddd40131b4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-24 17:02:39</sys_updated_on>
+            <sys_updated_on>2026-04-28 06:27:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>guardian_cnic</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-28 06:27:08</sys_created_on>
+            <sys_id>37593b81c3680f50f324fa0ed4013143</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Father/Guardian Details" display_value="Father/Guardian Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">71b4ed98c33532100a7bf3ddd40131b4</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-28 06:27:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>guardian_relation</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-24 17:02:39</sys_created_on>
-            <sys_id>4e74ad08c3a8c350f324fa0ed40131db</sys_id>
+            <sys_created_on>2026-04-28 06:27:08</sys_created_on>
+            <sys_id>b3593b81c3680f50f324fa0ed4013144</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Father/Guardian Details" display_value="Father/Guardian Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">71b4ed98c33532100a7bf3ddd40131b4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-24 17:02:39</sys_updated_on>
+            <sys_updated_on>2026-04-28 06:27:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>guardian_mobile</element>
-            <position>6</position>
+            <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-24 17:02:39</sys_created_on>
-            <sys_id>ca74ad08c3a8c350f324fa0ed40131dc</sys_id>
+            <sys_created_on>2026-04-28 06:27:08</sys_created_on>
+            <sys_id>33593b81c3680f50f324fa0ed4013145</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Father/Guardian Details" display_value="Father/Guardian Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">71b4ed98c33532100a7bf3ddd40131b4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-24 17:02:39</sys_updated_on>
+            <sys_updated_on>2026-04-28 06:27:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

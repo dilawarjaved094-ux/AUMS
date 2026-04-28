@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>father_cnic</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-28 06:28:24</sys_created_on>
+        <sys_id>5f9973c1c3680f50f324fa0ed4013133</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>father_cnic</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_update_name>sys_ui_policy_action_5f9973c1c3680f50f324fa0ed4013133</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-28 06:28:24</sys_updated_on>
+        <table>x_595775_automat_0_admission_application</table>
+        <ui_policy display_value="Show Fields for Father">e6793f81c3680f50f324fa0ed401315a</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=5f9973c1c3680f50f324fa0ed4013133"/>
+</record_update>

@@ -25,8 +25,8 @@
         <example_text/>
         <field>paid_fee_receipt</field>
         <global>false</global>
-        <help_tag>More information</help_tag>
-        <help_text/>
+        <help_tag/>
+        <help_text>Upload Picture in JPEG,JPG,PNG</help_text>
         <hidden>false</hidden>
         <include_none>false</include_none>
         <instructions/>
@@ -74,7 +74,7 @@
 */]]></save_script>
         <scale_max>5</scale_max>
         <scale_min>0</scale_min>
-        <show_help>false</show_help>
+        <show_help>true</show_help>
         <show_help_on_load>false</show_help_on_load>
         <sp_widget/>
         <summary_macro/>
@@ -82,14 +82,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-12-10 00:11:43</sys_created_on>
         <sys_id>106e2e18c37d32100a7bf3ddd40131f1</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Paid Fee Receipt</sys_name>
         <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
         <sys_policy/>
         <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
         <sys_update_name>item_option_new_106e2e18c37d32100a7bf3ddd40131f1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-26 22:06:53</sys_updated_on>
+        <sys_updated_on>2026-04-28 14:42:02</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>

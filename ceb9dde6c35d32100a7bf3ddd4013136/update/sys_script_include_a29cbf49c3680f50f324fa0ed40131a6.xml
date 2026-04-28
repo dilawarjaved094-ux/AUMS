@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_595775_automat_0.MeritListCalculator</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Calculates Merit for each section and Updates the records.</description>
+        <mobile_callable>false</mobile_callable>
+        <name>MeritListCalculator</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var MeritListCalculator = Class.create();
+MeritListCalculator.prototype = {
+    initialize: function() {},
+
+    // STEP 1: Find all unique Department & Degree combinations
+    generateAllMeritLists: function() {
+        // gs.info('AUMS Debug: Starting generateAllMeritLists function.');
+        
+        var agg = new GlideAggregate('x_595775_automat_0_admission_application');
+        agg.addQuery('application_status', 'accepted'); // Only process pending applications
+        agg.groupBy('degree_program');
+        agg.groupBy('degree_level');
+        agg.query();
+
+        var sectionCount = 0;
+        while (agg.next()) {
+            sectionCount++;
+            // FIX APPLIED HERE: Changed from agg.department and agg.degree to match your groupBy fields
+            var deptId = agg.getValue('degree_program') || 'Empty'; 
+            var degreeId = agg.getValue('degree_level') || 'Empty';
+            
+            // gs.info('AUMS Debug: Processing Section ' + sectionCount + ' - Program: ' + deptId + ', Level: ' + degreeId);
+            this._processSection(deptId, degreeId);
+        }
+        // gs.info('AUMS Debug: Finished processing ' + sectionCount + ' unique sections.');
+    },
+
+    // STEP 2: Calculate averages and then rank the section
+    _processSection: function(deptId, degreeId) {
+        var appGr = new GlideRecord('x_595775_automat_0_admission_application');
+        appGr.addQuery('degree_program', deptId);
+        appGr.addQuery('degree_level', degreeId);
+        appGr.addQuery('application_status', 'accepted');
+        appGr.query();
+
+        // gs.info('AUMS Debug: Found ' + appGr.getRowCount() + ' accepted applications for Program ' + deptId + ' / Level ' + degreeId);
+
+        // First loop: Calculate and save the average merit for everyone in this section
+        while (appGr.next()) {
+            var appId = appGr.getUniqueValue();
+            var averageMerit = this._calculateAveragePercentage(appId);
+            
+            // gs.info('AUMS Debug: App ' + appGr.number + ' calculated average: ' + averageMerit);
+            
+            appGr.setValue('u_merit', averageMerit.toFixed(2)); // Save to the new Merit field
+
+            // appGr.setWorkflow(false); // Prevent unnecessary business rules from firing
+            appGr.update();
+        }
+
+        // Now that everyone has a merit score, rank them!
+        this._rankSection(deptId, degreeId);
+    },
+
+    // STEP 3: Generate the Average from the Academic Records' Percentage fields
+    _calculateAveragePercentage: function(applicationId) {
+        var academicGr = new GlideRecord('x_595775_automat_0_academic_record'); 
+        academicGr.addQuery('u_admission_application', applicationId); 
+        academicGr.query();
+
+        var totalPercentage = 0;
+        var recordCount = 0;
+
+        while (academicGr.next()) {
+            // Fetch the percentage field from the academic record
+            var percentValue = parseFloat(academicGr.getValue('u_percentage') || 0);
+            totalPercentage += percentValue;
+            recordCount++; // Keep track of how many records the student has
+            
+            // gs.info('AUMS Debug: Found Academic Record ' + academicGr.number + ' for App ' + applicationId + ' with percentage: ' + percentValue);
+        }
+
+        // Prevent division by zero and calculate average
+        if (recordCount > 0) {
+            return (totalPercentage / recordCount); 
+        }
+        
+        // gs.info('AUMS Debug: WARNING - No academic records found for App ' + applicationId);
+        return 0; // Return 0 if they have no academic records attached
+    },
+
+    // STEP 4: Sort by the new Merit score and assign Admitted/Rejected
+    _rankSection: function(deptId, degreeId) {
+        var rankGr = new GlideRecord('x_595775_automat_0_admission_application');
+        rankGr.addQuery('degree_program', deptId);
+        rankGr.addQuery('degree_level', degreeId);
+        rankGr.addQuery('application_status', 'accepted');
+        rankGr.orderByDesc('u_merit'); // Sort highest average to lowest
+        rankGr.query();
+
+        var rank = 1;
+        while (rankGr.next()) {
+            // gs.info('AUMS Debug: Ranking App ' + rankGr.number + ' at Position ' + rank + ' with merit ' + rankGr.getValue('u_merit'));
+            
+            if (rank <= 100) {
+                rankGr.setValue('application_status', 'admitted');
+                rankGr.setValue('u_merit_rank', rank); // Store their rank (1 to 100)
+            } else {
+                rankGr.setValue('application_status', 'rejected');
+            }
+            
+            // rankGr.setWorkflow(false);
+            rankGr.update();
+            rank++;
+        }
+    },
+
+    type: 'MeritListCalculator'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-28 06:54:36</sys_created_on>
+        <sys_id>a29cbf49c3680f50f324fa0ed40131a6</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>MeritListCalculator</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_update_name>sys_script_include_a29cbf49c3680f50f324fa0ed40131a6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-28 13:06:50</sys_updated_on>
+    </sys_script_include>
+</record_update>

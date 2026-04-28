@@ -81,7 +81,14 @@
 * Don't use `current.setValue('sys_class_name', 'xxx')` as this will trigger reparent flow and can cause data loss
 * Avoid `current.setAbortAction()` and generate a separate record
 * Use `producer.var1` to access variables
-*/]]></script>
+*/
+
+// Set the initial status to 'Submitted' automatically
+current.u_state = 'submitted';
+
+
+// Sets the current date and time
+current.submission_date = new GlideDateTime();]]></script>
         <short_description>Submit your completed coursework, assignments, or quiz files for lecturer grading.</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
@@ -90,14 +97,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-07 18:50:00</sys_created_on>
         <sys_id>efc91eeac384c710f324fa0ed4013193</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>Submit Assignment/Quiz</sys_name>
         <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
         <sys_policy/>
         <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
         <sys_update_name>sc_cat_item_producer_efc91eeac384c710f324fa0ed4013193</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-04-26 22:38:32</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-28 19:47:44</sys_updated_on>
         <table_name>x_595775_automat_0_submissions</table_name>
         <taxonomy_topic/>
         <template/>
@@ -105,7 +112,7 @@
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>18</version>
+        <version>21</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function() {
+    var c = this;
+    
+    // Define the grid boundaries: 8 AM to 6 PM (18:00)
+    c.hours = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]; 
+    c.days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']; // Excluded Sunday for space, add back if needed
+
+    // Format military time to 12hr AM/PM for the sidebar
+    c.formatHour = function(h) {
+        if (h === 12) return '12 PM';
+        return h > 12 ? (h - 12) + ' PM' : h + ' AM';
+    };
+
+    // Helper: Parse "09:00 AM" into total minutes from midnight
+    function parseTimeToMinutes(timeStr) {
+        if (!timeStr) return 8 * 60; // Fallback to 8 AM
+        var match = timeStr.match(/(\d+):(\d+)\s*(AM|PM)/i);
+        if (!match) return 8 * 60;
+        
+        var h = parseInt(match[1], 10);
+        var m = parseInt(match[2], 10);
+        var ampm = match[3].toUpperCase();
+        
+        if (h === 12 && ampm === 'AM') h = 0;
+        if (h < 12 && ampm === 'PM') h += 12;
+        
+        return (h * 60) + m;
+    }
+
+    // Calculate dynamic CSS for absolute positioning
+    c.getEventStyle = function(event) {
+        var startMins = parseTimeToMinutes(event.start_time);
+        var endMins = parseTimeToMinutes(event.end_time);
+        
+        // Base variables (Must match CSS heights)
+        var dayStartMins = 8 * 60; // Calendar starts at 8 AM
+        var pxPerMinute = 1;       // 60px per hour = 1px per min
+        
+        var topPos = (startMins - dayStartMins) * pxPerMinute;
+        var height = (endMins - startMins) * pxPerMinute;
+        
+        // Failsafe in case of bad data
+        if (height < 20) height = 60; 
+        if (topPos < 0) topPos = 0;
+
+        return {
+            'top': topPos + 'px',
+            'height': height + 'px'
+        };
+    };
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.aums-calendar-wrapper {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+.calendar-header {
+  padding: 15px 20px;
+  border-bottom: 1px solid #e1dfdd;
+  background: #f8f8f8;
+}
+
+.calendar-header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.calendar-main {
+  display: flex;
+  overflow-x: auto; /* Allows scrolling on smaller screens */
+}
+
+/* --- Time Sidebar --- */
+.time-col {
+  width: 70px;
+  flex-shrink: 0;
+  border-right: 1px solid #e1dfdd;
+  background: #fff;
+}
+
+.time-header-spacer {
+  height: 50px; /* Matches day-header height */
+  border-bottom: 1px solid #e1dfdd;
+}
+
+.time-label {
+  height: 60px; /* 60px per hour */
+  position: relative;
+}
+
+.time-label span {
+  position: absolute;
+  top: -8px; /* Centers the text on the line */
+  right: 10px;
+  font-size: 11px;
+  color: #605e5c;
+}
+
+/* --- Days Grid --- */
+.days-grid {
+  display: flex;
+  flex-grow: 1;
+  min-width: 800px; /* Forces scrolling if window is too small */
+}
+
+.day-col {
+  flex: 1;
+  border-right: 1px solid #e1dfdd;
+  min-width: 140px;
+}
+
+.day-header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #e1dfdd;
+  background: #fdfdfd;
+}
+
+.day-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+/* The background with horizontal hour lines */
+.day-timeline {
+  position: relative;
+  height: 660px; /* 11 hours * 60px */
+  background-image: linear-gradient(#e1dfdd 1px, transparent 1px);
+  background-size: 100% 60px; /* Line every 60px */
+}
+
+/* --- Event Blocks --- */
+.event-block {
+  position: absolute;
+  left: 2px;
+  right: 4px;
+  background-color: #e5e5f7; /* Light purple/blue */
+  border-left: 4px solid #5c2d91; /* Dark purple border */
+  border-radius: 3px;
+  padding: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: transform 0.1s;
+}
+
+.event-block:hover {
+  transform: scale(1.02);
+  z-index: 10; /* Pops it above other blocks on hover */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.event-title {
+  font-weight: 600;
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.event-details {
+  font-size: 11px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.event-details i {
+  width: 12px;
+  text-align: center;
+  margin-right: 3px;
+  color: #888;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>aums_timetable</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>AUMS Timetable</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    data.timetable = {
+        'Monday': [], 'Tuesday': [], 'Wednesday': [], 
+        'Thursday': [], 'Friday': [], 'Saturday': [], 'Sunday': []
+    };
+    
+    var ttGr = new GlideRecord('x_595775_automat_0_timetable');
+    ttGr.query();
+
+    while (ttGr.next()) {
+        var gdt = new GlideDateTime(ttGr.getValue('date') + " 00:00:00");
+        var daysArr = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+        var dayName = daysArr[gdt.getDayOfWeekLocalTime() - 1];
+
+        if (data.timetable[dayName]) {
+            data.timetable[dayName].push({
+                sys_id: ttGr.getUniqueValue(),
+                date: ttGr.getValue('date'),
+                class_name: ttGr.getDisplayValue('u_class') || 'TBD',
+                course: ttGr.getDisplayValue('course') || 'Unknown',
+                lecturer: ttGr.getDisplayValue('lecturer') || 'TBD',
+                start_time: ttGr.getValue('lecture_start_time'), // e.g., "09:00 AM"
+                end_time: ttGr.getValue('lecture_end_time')      // e.g., "11:00 AM"
+            });
+        }
+    }
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-28 20:39:46</sys_created_on>
+        <sys_id>2d8cf655c3608f50f324fa0ed40131fc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>AUMS Timetable</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_update_name>sp_widget_2d8cf655c3608f50f324fa0ed40131fc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-28 20:45:18</sys_updated_on>
+        <template><![CDATA[<div class="aums-calendar-wrapper">
+  <div class="calendar-header">
+    <h2><i class="fa fa-calendar"></i> AUMS Weekly Schedule</h2>
+  </div>
+
+  <div class="calendar-main">
+    
+    <div class="time-col">
+      <div class="time-header-spacer"></div> <div class="time-label" ng-repeat="hour in c.hours">
+        <span>{{::c.formatHour(hour)}}</span>
+      </div>
+    </div>
+
+    <div class="days-grid">
+      <div class="day-col" ng-repeat="day in c.days">
+        
+        <div class="day-header">
+          <div class="day-name">{{::day}}</div>
+        </div>
+
+        <div class="day-timeline">
+          <div class="event-block" 
+               ng-repeat="cls in c.data.timetable[day]" 
+               ng-style="c.getEventStyle(cls)">
+            
+            <div class="event-title">{{::cls.course}}</div>
+            <div class="event-details">
+              {{::cls.start_time}} - {{::cls.end_time}}<br>
+              <i class="fa fa-map-marker"></i> {{::cls.class_name}}<br>
+              <i class="fa fa-user"></i> {{::cls.lecturer}}
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>2d8cf655c3608f50f324fa0ed40131fc</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-28 20:39:46</sys_created_on>
+        <sys_id>ad8c729dc3608f50f324fa0ed4013168</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-28 20:39:46</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

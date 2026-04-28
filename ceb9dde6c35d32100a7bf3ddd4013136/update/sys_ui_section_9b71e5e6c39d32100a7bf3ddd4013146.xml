@@ -4,69 +4,97 @@
             <element>u_academic_record</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-24 17:02:39</sys_created_on>
-            <sys_id>8e74ad08c3a8c350f324fa0ed40131bb</sys_id>
+            <sys_created_on>2026-04-28 06:48:23</sys_created_on>
+            <sys_id>033eb34dc3680f50f324fa0ed40131ce</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Academic Details" display_value="Academic Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">9b71e5e6c39d32100a7bf3ddd4013146</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-24 17:02:39</sys_updated_on>
+            <sys_updated_on>2026-04-28 06:48:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_merit</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-28 06:48:23</sys_created_on>
+            <sys_id>8f3eb34dc3680f50f324fa0ed40131ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Academic Details" display_value="Academic Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">9b71e5e6c39d32100a7bf3ddd4013146</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-28 06:48:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_merit_rank</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-28 06:48:23</sys_created_on>
+            <sys_id>0f3eb34dc3680f50f324fa0ed40131cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Academic Details" display_value="Academic Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">9b71e5e6c39d32100a7bf3ddd4013146</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-28 06:48:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>matriculation_o_level_certificate</element>
-            <position>1</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-24 17:02:39</sys_created_on>
-            <sys_id>0e74ad08c3a8c350f324fa0ed40131bc</sys_id>
+            <sys_created_on>2026-04-28 06:48:23</sys_created_on>
+            <sys_id>8b3eb34dc3680f50f324fa0ed40131d0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Academic Details" display_value="Academic Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">9b71e5e6c39d32100a7bf3ddd4013146</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-24 17:02:39</sys_updated_on>
+            <sys_updated_on>2026-04-28 06:48:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>intermediate_a_level_certificate</element>
-            <position>2</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-24 17:02:39</sys_created_on>
-            <sys_id>8a74ad08c3a8c350f324fa0ed40131bd</sys_id>
+            <sys_created_on>2026-04-28 06:48:23</sys_created_on>
+            <sys_id>0b3eb34dc3680f50f324fa0ed40131d1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Academic Details" display_value="Academic Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">9b71e5e6c39d32100a7bf3ddd4013146</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-24 17:02:39</sys_updated_on>
+            <sys_updated_on>2026-04-28 06:48:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>degree_transcript</element>
-            <position>3</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-24 17:02:39</sys_created_on>
-            <sys_id>0a74ad08c3a8c350f324fa0ed40131be</sys_id>
+            <sys_created_on>2026-04-28 06:48:23</sys_created_on>
+            <sys_id>873eb34dc3680f50f324fa0ed40131d2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Academic Details" display_value="Academic Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">9b71e5e6c39d32100a7bf3ddd4013146</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-24 17:02:39</sys_updated_on>
+            <sys_updated_on>2026-04-28 06:48:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>paid_fee_receipt</element>
-            <position>4</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-24 17:02:39</sys_created_on>
-            <sys_id>8674ad08c3a8c350f324fa0ed40131bf</sys_id>
+            <sys_created_on>2026-04-28 06:48:23</sys_created_on>
+            <sys_id>073eb34dc3680f50f324fa0ed40131d3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Academic Details" display_value="Academic Details" name="x_595775_automat_0_admission_application" sys_domain="global" view="Default view">9b71e5e6c39d32100a7bf3ddd4013146</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-24 17:02:39</sys_updated_on>
+            <sys_updated_on>2026-04-28 06:48:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

@@ -13,7 +13,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>54d55ae8c33532100a7bf3ddd4013173</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Admissions Dashboard</sys_name>
         <sys_overrides/>
         <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
@@ -21,7 +21,7 @@
         <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
         <sys_update_name>par_dashboard_54d55ae8c33532100a7bf3ddd4013173</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-18 18:47:52</sys_updated_on>
+        <sys_updated_on>2026-04-28 12:36:02</sys_updated_on>
         <sys_ux_app_config/>
         <sys_ux_app_route/>
         <sys_ux_macroponent/>

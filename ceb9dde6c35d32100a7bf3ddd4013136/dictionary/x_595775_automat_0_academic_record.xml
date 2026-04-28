@@ -9,13 +9,14 @@
             </choice>
         </element>
         <element label="Institution/Board" max_length="40" name="u_institution_board" type="string"/>
-        <element label="CGPA" max_length="40" name="u_cgpa" type="string"/>
-        <element label="Roll Number" max_length="40" name="u_roll_number" type="string"/>
-        <element label="Passing Year" max_length="40" name="u_passing_year" type="string"/>
-        <element label="Obtained Marks" max_length="40" name="u_obtained_marks" type="string"/>
+        <element label="CGPA" max_length="40" name="u_cgpa" type="integer"/>
+        <element label="Roll Number" max_length="40" name="u_roll_number" type="integer"/>
+        <element label="Passing Year" max_length="40" name="u_passing_year" type="integer"/>
+        <element label="Obtained Marks" max_length="40" name="u_obtained_marks" type="integer"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
-        <element label="Total marks" max_length="40" name="u_total_marks" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;    // 1. Get the values from the current record&#13;&#10;    // REPLACE these string values with your actual backend field names&#13;&#10;    var degreeLevel = current.getValue('u_degree_level'); &#13;&#10;    var obtained = parseFloat(current.getValue('u_obtained_marks')) || 0;&#13;&#10;    var total = parseFloat(current.getValue('u_total_marks')) || 0;&#13;&#10;    var cgpa = parseFloat(current.getValue('u_cgpa')) || 0;&#13;&#10;&#13;&#10;    var finalPercentage = 0.0;&#13;&#10;&#13;&#10;    // 2. Determine the calculation logic based on the degree&#13;&#10;    if (degreeLevel == &quot;Bachelor's&quot; || degreeLevel == &quot;Master's&quot;) {&#13;&#10;        // Calculate based on CGPA&#13;&#10;        if (cgpa &gt; 0 &amp;&amp; cgpa &lt;= 4.0) {&#13;&#10;            finalPercentage = (cgpa / 4.0) * 100;&#13;&#10;        }&#13;&#10;    } else {&#13;&#10;        // Calculate based on standard marks&#13;&#10;        if (total &gt; 0) {&#13;&#10;            finalPercentage = (obtained / total) * 100;&#13;&#10;        }&#13;&#10;    }&#13;&#10;&#13;&#10;    // 3. Return the value formatted to 2 decimal places&#13;&#10;    return parseFloat(finalPercentage.toFixed(2));&#13;&#10;&#13;&#10;})(current);" label="Percentage" max_length="40" name="u_percentage" type="float"/>
+        <element label="Total marks" max_length="40" name="u_total_marks" type="integer"/>
         <element label="Admission Application" max_length="32" name="u_admission_application" reference="x_595775_automat_0_admission_application" type="reference"/>
         <index name="index">
             <element name="sys_class_name"/>

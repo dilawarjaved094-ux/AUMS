@@ -4,13 +4,111 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-11-28 19:11:49</sys_created_on>
-            <sys_id>4950c5b4c32932100a7bf3ddd40131af</sys_id>
+            <sys_created_on>2026-04-28 20:13:02</sys_created_on>
+            <sys_id>39663a51c3608f50f324fa0ed401315e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_courses" sys_domain="global" view="Default view">c150c5b4c32932100a7bf3ddd40131a8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-11-28 19:11:49</sys_updated_on>
+            <sys_updated_on>2026-04-28 20:13:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>course_name</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-28 20:13:02</sys_created_on>
+            <sys_id>b5663a51c3608f50f324fa0ed401315f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_courses" sys_domain="global" view="Default view">c150c5b4c32932100a7bf3ddd40131a8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-28 20:13:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lecturer</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-28 20:13:02</sys_created_on>
+            <sys_id>35663a51c3608f50f324fa0ed4013160</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_courses" sys_domain="global" view="Default view">c150c5b4c32932100a7bf3ddd40131a8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-28 20:13:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>credit_hours</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-28 20:13:02</sys_created_on>
+            <sys_id>b1663a51c3608f50f324fa0ed4013161</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_courses" sys_domain="global" view="Default view">c150c5b4c32932100a7bf3ddd40131a8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-28 20:13:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-28 20:13:02</sys_created_on>
+            <sys_id>31663a51c3608f50f324fa0ed4013162</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_courses" sys_domain="global" view="Default view">c150c5b4c32932100a7bf3ddd40131a8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-28 20:13:02</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>course_code</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-28 20:13:02</sys_created_on>
+            <sys_id>bd663a51c3608f50f324fa0ed4013162</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_courses" sys_domain="global" view="Default view">c150c5b4c32932100a7bf3ddd40131a8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-28 20:13:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>department</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-28 20:13:02</sys_created_on>
+            <sys_id>3d663a51c3608f50f324fa0ed4013163</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_courses" sys_domain="global" view="Default view">c150c5b4c32932100a7bf3ddd40131a8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-28 20:13:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_class</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-28 20:13:02</sys_created_on>
+            <sys_id>b9663a51c3608f50f324fa0ed4013164</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_595775_automat_0_courses" sys_domain="global" view="Default view">c150c5b4c32932100a7bf3ddd40131a8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-28 20:13:02</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
