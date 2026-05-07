@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-23 20:58:55</sys_created_on>
+        <sys_id>d5f051bfc3184350f324fa0ed401314c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_595775_automat_0_student.x_595775_automat_0.Student</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_security_acl display_value="x_595775_automat_0_student">55f051bfc3184350f324fa0ed4013147</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_d5f051bfc3184350f324fa0ed401314c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-23 20:58:55</sys_updated_on>
+        <sys_user_role display_value="x_595775_automat_0.Student" name="x_595775_automat_0.Student">09f051bfc3184350f324fa0ed401310a</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</application>
+        <file_path/>
+        <instance_id>c11b364b3ba3ced0986d048aa4e45aea</instance_id>
+        <instance_name>dev279604</instance_name>
+        <name>sys_security_acl_role_d5f051bfc3184350f324fa0ed401314c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-23 20:58:55</sys_created_on><sys_id>d5f051bfc3184350f324fa0ed401314c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_595775_automat_0_student.x_595775_automat_0.Student</sys_name><sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package><sys_policy/><sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope><sys_security_acl display_value="x_595775_automat_0_student">55f051bfc3184350f324fa0ed4013147</sys_security_acl><sys_update_name>sys_security_acl_role_d5f051bfc3184350f324fa0ed401314c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-23 20:58:55</sys_updated_on><sys_user_role display_value="x_595775_automat_0.Student" name="x_595775_automat_0.Student">09f051bfc3184350f324fa0ed401310a</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-484443865</payload_hash>
+        <record_name>x_595775_automat_0_student.x_595775_automat_0.Student</record_name>
+        <reverted_from/>
+        <source>7f6d1446c33f7210f324fa0ed40131fe</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-23 20:58:55</sys_created_on>
+        <sys_id>d9f051bfc3184350f324fa0ed4013151</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19dbc237c9b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-23 20:58:55</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>99f051bf0e184350e9524035c602f150</update_guid>
+        <update_guid_history>99f051bf0e184350e9524035c602f150:-484443865</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_595775_automat_0_student.x_595775_automat_0.Student">5254fc29c320cf50f324fa0ed401314d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-29 05:23:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>21bb0554907b46e185d2e9a0c6c721f1</sys_id>
+        <sys_metadata>d5f051bfc3184350f324fa0ed401314c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_595775_automat_0_student.x_595775_automat_0.Student</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_parent display_value="">55f051bfc3184350f324fa0ed4013147</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_scope_delete display_value="">25e0a9bd0d5f42dc8be15d67601c4a10</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_d5f051bfc3184350f324fa0ed401314c</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_d5f051bfc3184350f324fa0ed401314c">d9f051bfc3184350f324fa0ed4013151</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-29 05:23:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -6,15 +6,12 @@
         <element label="Department" max_length="32" name="department" reference="cmn_department" type="reference"/>
         <element label="Description" max_length="400" name="description" type="string"/>
         <element label="Class" max_length="32" name="u_class" reference="x_595775_automat_0_class" type="reference"/>
-        <element label="Lecturer" max_length="32" name="lecturer" reference="x_595775_automat_0_staff" type="reference"/>
+        <element label="Lecturer" max_length="1024" name="lecturer" reference="sys_user" type="glide_list"/>
         <element label="Course Name" max_length="40" name="course_name" type="string"/>
         <index name="index">
             <element name="department"/>
         </index>
         <index name="index2">
-            <element name="lecturer"/>
-        </index>
-        <index name="index3">
             <element name="u_class"/>
         </index>
     </element>

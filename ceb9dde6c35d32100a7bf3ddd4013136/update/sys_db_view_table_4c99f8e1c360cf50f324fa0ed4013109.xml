@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <left_join>true</left_join>
+        <order>100</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-29 05:48:21</sys_created_on>
+        <sys_id>4c99f8e1c360cf50f324fa0ed4013109</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_595775_automat_0_submissions</sys_name>
+        <sys_package display_value="AUMS" source="x_595775_automat_0">ceb9dde6c35d32100a7bf3ddd4013136</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AUMS">ceb9dde6c35d32100a7bf3ddd4013136</sys_scope>
+        <sys_update_name>sys_db_view_table_4c99f8e1c360cf50f324fa0ed4013109</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-29 05:49:43</sys_updated_on>
+        <table>x_595775_automat_0_submissions</table>
+        <variable_prefix>sub</variable_prefix>
+        <view display_value="x_595775_automat_0_class_m2m_and_course_assessment">bd76746dc320cf50f324fa0ed40131de</view>
+        <where_clause>sub.u_assessment = ca.sys_id &amp;&amp; sub.student = m2m.sys_user</where_clause>
+    </sys_db_view_table>
+</record_update>
